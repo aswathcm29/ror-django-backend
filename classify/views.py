@@ -1,9 +1,10 @@
 # voice_processor/views.py
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from django.http import JsonResponse
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework import status
-from .utils import process_audio, generate_text_response
+from .utils import process_audio, generate_text_response,convert_text_to_voice
 import logging
 import os
 logger = logging.getLogger(__name__)
@@ -66,6 +67,17 @@ class TextVoiceGenerator(APIView):
             text_response = generate_text_response(text, lang)
             if(text_response.startswith("Error")):
                 return Response({'error': text_response}, status=status.HTTP_400_BAD_REQUEST)
-            return Response({'response': text_response}, status=status.HTTP_200_OK)
+           
+            # voice_response = convert_text_to_voice(text_response, lang)
+            # if(voice_response.startswith("Error")):
+            #     return Response({'error': voice_response}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Create the response dictionary
+            response_data = {
+                'text_response': text_response,
+                'voice_response': "working on it",
+            }   
+                    
+            return JsonResponse(response_data)
         except:
             return Response({'error': 'Error generating text and voice response'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

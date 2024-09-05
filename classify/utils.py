@@ -1,12 +1,14 @@
 import speech_recognition as sr
 from pydub import AudioSegment
-import io, os
+import io, os, base64, tempfile
 import logging
 from django.conf import settings
 from langdetect import detect
 from googletrans import Translator
 from dotenv import load_dotenv
 from groq import Groq
+from gtts import gTTS
+from pydub import AudioSegment
 # Load environment variables from .env file
 load_dotenv()
 
@@ -122,8 +124,43 @@ def generate_text_response(input_text, lang):
             ],
             model="llama3-8b-8192",
         )
-
+        logging.info(f"Text Generated Successfully")
         return chat_completion.choices[0].message.content
     except:
         logging.error("Error generating text response", exc_info=True)
         return "Error generating text response"
+
+
+def convert_text_to_voice(text_response, lang):
+    logging.info(f"converting text to voice for input")
+    try:
+        logging.info(f"Converting text to voice for input")
+
+        temp_file_name = None
+         # Create gTTS object
+        tts = gTTS(text=text_response, lang=lang, slow=False)
+        
+        # Use a temporary file to save the audio
+        with tempfile.NamedTemporaryFile(delete=False) as temp_file:
+            # Save the audio to the temporary file
+            tts.save(temp_file.name)  # Save to the temporary file
+            temp_file.seek(0)  # Move to the beginning of the file
+
+         # Check if the temporary file was created successfully
+        if temp_file_name:
+            # Read audio data and encode it to base64
+            with open(temp_file_name, 'rb') as f:
+                audio_base64 = base64.b64encode(f.read()).decode('utf-8')
+            
+            # Remove the temporary file after reading
+            os.remove(temp_file_name)
+
+            logging.info("Voice response generated successfully")
+            return audio_base64
+        else:
+            logging.error("Failed to create temporary file")
+            return "Error generating voice response"
+
+    except Exception as e:
+        logging.error(f"Error generating voice response:{str(e)}", exc_info=True) 
+        return "Error generating voice response"
