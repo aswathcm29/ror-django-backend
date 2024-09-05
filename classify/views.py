@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework import status
-from .utils import process_audio
+from .utils import process_audio, generate_text_response
 import logging
 import os
 logger = logging.getLogger(__name__)
@@ -23,15 +23,18 @@ class ProcessVoiceInput(APIView):
             logger.info(f"Processing voice input from file: {audio_file.name}")
             
             # Process the voice input
-            text = process_audio(audio_file)
-            if text.startswith("Error") or text == "Speech could not be recognized":
-                logger.error(f"Error processing audio: {text}")
-                return Response({'error': text}, status=status.HTTP_400_BAD_REQUEST)
+            result = process_audio(audio_file)
+
+            if result['text'].startswith("Error") or result['text'] == "Speech could not be recognized":
+                logger.error(f"Error processing audio: {result['category']}")
+                return Response({'error': result['text']}, status=status.HTTP_400_BAD_REQUEST)
             
-            logger.info(f"Recognized text: {text}")
+            logger.info(f"Recognized text: {result['category']}")
             
             return Response({
-                'text': text
+                'category': result['category'],
+                'text': result['text'],
+                'lang': result['lang'],
             }, status=status.HTTP_200_OK)
         
         elif 'application/json' in request.content_type:
@@ -46,3 +49,23 @@ class ProcessVoiceInput(APIView):
             )
 
 # The rest of the files (utils.py, urls.py) remain the same as in the previous artifact
+
+
+class TextVoiceGenerator(APIView):
+    parser_classes = (MultiPartParser, FormParser, JSONParser)
+    def post(self, request, format=None):
+        text = request.data.get('text')
+        lang = request.data.get('lang')
+
+        if not text:
+            return Response({'error': 'No text provided'}, status=status.HTTP_400_BAD_REQUEST)
+        if not lang:
+            return Response({'error': 'No language provided'}, status=status.HTTP_400_BAD_REQUEST)
+        # Generate voice from text
+        try:
+            text_response = generate_text_response(text, lang)
+            if(text_response.startswith("Error")):
+                return Response({'error': text_response}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({'response': text_response}, status=status.HTTP_200_OK)
+        except:
+            return Response({'error': 'Error generating text and voice response'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
