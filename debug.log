@@ -1,0 +1,147 @@
+Loading groq api key
+Generating text response for input: I am having a fever what to do ?
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\pkcibiyanna\\projects\\ROR\\env_ror\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'I am having a fever what to do ?'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002C97BED2060>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000002C97BE98350> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002C97BED13D0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Sep 2024 19:25:28 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29987'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_01j71tc60peedv5vpcb9q6gz9y'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=LZ7S1JEJ12HnnYgKWdQzsEeFbcy.2ZkVluCxzgvJGvI-1725564328-1.0.1.1-Tm4G11675wSJruwYuGSIkCGtIJ6A7FFrFY8JwfFAklhEUL6eAReRwqJofT5U_eafsTH0aAx_DyEsNFQClG3IKA; path=/; expires=Thu, 05-Sep-24 19:55:28 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8be89af88e7e3aec-BOM'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Sep 2024 19:25:28 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29987', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_01j71tc60peedv5vpcb9q6gz9y', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=LZ7S1JEJ12HnnYgKWdQzsEeFbcy.2ZkVluCxzgvJGvI-1725564328-1.0.1.1-Tm4G11675wSJruwYuGSIkCGtIJ6A7FFrFY8JwfFAklhEUL6eAReRwqJofT5U_eafsTH0aAx_DyEsNFQClG3IKA; path=/; expires=Thu, 05-Sep-24 19:55:28 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8be89af88e7e3aec-BOM', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Internal Server Error: /api/classify/v1/text-voice-generator/
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+close.started
+close.complete
+close.started
+close.complete
+Watching for file changes with StatReloader
+Loading groq api key
+Generating text response for input: I am having a fever what to do ?
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\pkcibiyanna\\projects\\ROR\\env_ror\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'I am having a fever what to do ?'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000026A49CB78C0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000026A49C02DD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000026A49CB7470>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Sep 2024 19:26:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29987'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_01j71td6hje21v0acvtxvpbpy2'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=q.cbJHEQTgg4lbhJW.julKWTCpbKcN3_fCtE800KCsA-1725564361-1.0.1.1-.XIVfTGipTNCzKqMl7duQJoqmGNLe0VfjRX_aR_TfcgiLUK881hDYW7HHWiihWgTNEmXNnPHrPdxiqklFzzWQA; path=/; expires=Thu, 05-Sep-24 19:56:01 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8be89bc8ac1d3b25-BOM'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Sep 2024 19:26:01 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29987', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_01j71td6hje21v0acvtxvpbpy2', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=q.cbJHEQTgg4lbhJW.julKWTCpbKcN3_fCtE800KCsA-1725564361-1.0.1.1-.XIVfTGipTNCzKqMl7duQJoqmGNLe0VfjRX_aR_TfcgiLUK881hDYW7HHWiihWgTNEmXNnPHrPdxiqklFzzWQA; path=/; expires=Thu, 05-Sep-24 19:56:01 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8be89bc8ac1d3b25-BOM', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Internal Server Error: /api/classify/v1/text-voice-generator/
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading groq api key
+Generating text response for input: I am having a fever what to do ?
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\pkcibiyanna\\projects\\ROR\\env_ror\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'I am having a fever what to do ?'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A687BC23C0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001A687BB2F50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001A687BC2300>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Sep 2024 19:26:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29987'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_01j71tdqnkfvqadtjdas6hna8j'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=lk.VTQFvCoOy_CjULfoUQRg1vf2U571LDZoudBdXrdw-1725564379-1.0.1.1-v5h4fBnPwqDnJIFeXieqoTdALminuEeF2il3cN297vRCSYql9wjrDKWC5oc.IiK8EWimA5CUhJ_7ohtJkgJdlw; path=/; expires=Thu, 05-Sep-24 19:56:19 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8be89c363fb41bdc-BOM'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Sep 2024 19:26:19 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29987', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_01j71tdqnkfvqadtjdas6hna8j', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=lk.VTQFvCoOy_CjULfoUQRg1vf2U571LDZoudBdXrdw-1725564379-1.0.1.1-v5h4fBnPwqDnJIFeXieqoTdALminuEeF2il3cN297vRCSYql9wjrDKWC5oc.IiK8EWimA5CUhJ_7ohtJkgJdlw; path=/; expires=Thu, 05-Sep-24 19:56:19 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8be89c363fb41bdc-BOM', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Internal Server Error: /api/classify/v1/text-voice-generator/
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading groq api key
+Generating text response for input: I am having a fever what to do ?
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\pkcibiyanna\\projects\\ROR\\env_ror\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'I am having a fever what to do ?'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023F5C63CD40>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000023F5C66DAD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000023F5C63C920>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Sep 2024 19:26:47 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29987'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_01j71tejx3fpgsrey6v3x3r2kk'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=8ILITR4jYZvcIEK0zhFREglDnyluFpB.gmFEl2uPP_w-1725564407-1.0.1.1-JzK3Z4OCJ9fhvyEmNYlPO7EXdAiKMylndk82WRKCxXAiWdDaZRsrOp9jKgXbc5aFYAOpvwPHppzCtYHdilFY8w; path=/; expires=Thu, 05-Sep-24 19:56:47 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8be89ce50cc247e2-BOM'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Sep 2024 19:26:47 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29987', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_01j71tejx3fpgsrey6v3x3r2kk', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=8ILITR4jYZvcIEK0zhFREglDnyluFpB.gmFEl2uPP_w-1725564407-1.0.1.1-JzK3Z4OCJ9fhvyEmNYlPO7EXdAiKMylndk82WRKCxXAiWdDaZRsrOp9jKgXbc5aFYAOpvwPHppzCtYHdilFY8w; path=/; expires=Thu, 05-Sep-24 19:56:47 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8be89ce50cc247e2-BOM', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Internal Server Error: /api/classify/v1/text-voice-generator/
+close.started
+close.complete
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+Loading groq api key
+Generating text response for input: I am having a fever what to do ?
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\pkcibiyanna\\projects\\ROR\\env_ror\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'I am having a fever what to do ?'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EC5675C9E0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001EC56891AD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001EC51657410>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 05 Sep 2024 19:27:33 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29987'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'26ms'), (b'x-request-id', b'req_01j71tg0j8e1d96avwrdev715t'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=cJp_Y2ZRG0Z8AnNvtRRTgAf2NCOxtiIoyMQ3.dqEJ3U-1725564453-1.0.1.1-pM.hvqJRAZwtpIym3wz.1k3.wP6Txt8Yrwh53iZDoYq9HEafk9i4ervgMjdTTcYY7eUEm_CnC0U4n8IzzeLHWg; path=/; expires=Thu, 05-Sep-24 19:57:33 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8be89e04d95747c0-BOM'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 05 Sep 2024 19:27:33 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29987', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '26ms', 'x-request-id': 'req_01j71tg0j8e1d96avwrdev715t', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=cJp_Y2ZRG0Z8AnNvtRRTgAf2NCOxtiIoyMQ3.dqEJ3U-1725564453-1.0.1.1-pM.hvqJRAZwtpIym3wz.1k3.wP6Txt8Yrwh53iZDoYq9HEafk9i4ervgMjdTTcYY7eUEm_CnC0U4n8IzzeLHWg; path=/; expires=Thu, 05-Sep-24 19:57:33 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8be89e04d95747c0-BOM', 'content-encoding': 'gzip'})
+Text Generated Successfully
+close.started
+close.complete
+C:\pkcibiyanna\projects\ROR\ror_django_backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
