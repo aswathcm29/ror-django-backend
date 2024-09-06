@@ -1,8 +1,14 @@
+
 {
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "ror_django_backend/wsgi.py"
-    }
-  ]
+    "builds": [{
+        "src": "ror_django_backend/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "ror_django_backend/wsgi.py"
+        }
+    ]
 }

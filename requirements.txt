@@ -4,6 +4,8 @@ asgiref==3.8.1
 certifi==2024.8.30
 chardet==3.0.4
 charset-normalizer==3.3.2
+click==8.1.7
+colorama==0.4.6
 distro==1.9.0
 Django==5.1.1
 djangorestframework==3.15.2
@@ -11,6 +13,7 @@ dnspython==2.6.1
 ffmpeg==1.4
 googletrans==2.4.0
 groq==0.11.0
+gTTS==2.5.3
 h11==0.14.0
 h2==3.2.0
 hpack==3.0.0
