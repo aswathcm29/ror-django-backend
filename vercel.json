@@ -1,12 +1,8 @@
-
 {
-    "builds": [{
-        "src": "ror_django_backend/wsgi.py"
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "ror_django_backend/wsgi.py"
-        }
-    ]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "ror_django_backend/wsgi.py"
+    }
+  ]
 }
