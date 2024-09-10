@@ -119,7 +119,7 @@ def generate_text_response(input_text, lang):
             messages=[
                 {
                     "role": "user",
-                    "content": f"{input_text}",
+                    "content": f"Give in short only the remedy for the given query - {input_text}  !!Avoid escape characters",
                 }
             ],
             model="llama3-8b-8192",
@@ -128,6 +128,49 @@ def generate_text_response(input_text, lang):
         return chat_completion.choices[0].message.content
     except:
         logging.error("Error generating text response", exc_info=True)
+        return "Error generating text response"
+
+def classify_page(input_text, lang):
+    try:
+        groq_text_generation_key = os.getenv("GORQ_TEXT_GENERATION_KEY")
+        if not groq_text_generation_key:
+            raise ValueError("GORQ_TEXT_GENERATION_KEY environment variable not set")
+    except Exception as e:
+        return "Error loading Groq API key"
+
+
+    try:
+        client = Groq(
+            api_key=groq_text_generation_key,
+        )
+
+        prompt = (
+            "Classify the following query into one of these categories: "
+            "'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\n"
+            "Here is how you should classify:\n"
+            "- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n"
+            "- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n"
+            "- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n"
+            "- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n"
+            "- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\n"
+            "Query: {input_text}\n\n"
+            "Category:\n"
+            "Just give me a single one-word answer based on the category that best fits the query provided."
+        ).format(input_text=input_text)
+
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            model="llama3-8b-8192",
+        )
+
+        return chat_completion.choices[0].message.content.strip()
+    
+    except Exception as e:
         return "Error generating text response"
 
 

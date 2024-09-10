@@ -2455,3 +2455,582 @@ Forbidden: /users/profile/
 Forbidden: /users/profile/
 C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/classify/v1/check-navigation/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Forbidden: /api/classify/v1/check-navigation/
+Method Not Allowed: /api/classify/v1/check-navigation/
+Not Found: /favicon.ico
+C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Received voice navigation query: im feeling dizzy
+Internal Server Error: /api/classify/v1/check-navigation/
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Received voice navigation query: im feeling dizzy
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nQuery: im feeling dizzy\n\nCategory:"}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000017A4AF2FB30>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000017A4AE6FA50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000017A4AF2E210>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:07:23 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29951'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'98ms'), (b'x-request-id', b'req_01j7eeexpded0tmp1kp3k8y7c9'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=l_dFAVfK19hPYtwHgROddSfPRua_UIx08lopiJ0psDc-1725988043-1.0.1.1-3rhLi8hlYA0dgYC8j2Uh1XyUYGzreeQz6pb_4lJUsH99Ffo5bKVloZ73pVGzoqEEfc.IsWSF8cY_di5gKbt8Mg; path=/; expires=Tue, 10-Sep-24 17:37:23 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1103906fcd7fa1-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:07:23 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29951', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '98ms', 'x-request-id': 'req_01j7eeexpded0tmp1kp3k8y7c9', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=l_dFAVfK19hPYtwHgROddSfPRua_UIx08lopiJ0psDc-1725988043-1.0.1.1-3rhLi8hlYA0dgYC8j2Uh1XyUYGzreeQz6pb_4lJUsH99Ffo5bKVloZ73pVGzoqEEfc.IsWSF8cY_di5gKbt8Mg; path=/; expires=Tue, 10-Sep-24 17:37:23 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1103906fcd7fa1-MAA', 'content-encoding': 'gzip'})
+Query categorized under: I would classify the query "im feeling dizzy" as 'medibot'.
+
+' Medibot' is typically used for a chatbot that can have a casual conversation with a user, and respond with preliminary advice or ask follow-up questions to help diagnose a symptom. In this case, the query "im feeling dizzy" is a common symptom that a medibot might respond to.
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Received voice navigation query: im feeling dizzy
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nQuery: im feeling dizzy\n\nCategory:\nJust no need any explanation give me with a single line ans category : and the answer in json format "}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000212A5D1B770>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x00000212A614C250> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000212A5AF4B00>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:08:41 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29925'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'150ms'), (b'x-request-id', b'req_01j7eeha5jenh8kr9naa7nvtzj'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=pW7ofCe38FAHCzXdQmamSLX3pbrr2C7eiaoBIQYUMsI-1725988121-1.0.1.1-CqkIsc4ZVssOZOvMB_ZNbTuYB152C6j.GdjAjJMy8lAQx4sjxDjTPwlWNb8H_3L31z4z5TUMYHo3ecAmfhK29Q; path=/; expires=Tue, 10-Sep-24 17:38:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c110579d8a37ee0-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:08:41 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29925', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '150ms', 'x-request-id': 'req_01j7eeha5jenh8kr9naa7nvtzj', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=pW7ofCe38FAHCzXdQmamSLX3pbrr2C7eiaoBIQYUMsI-1725988121-1.0.1.1-CqkIsc4ZVssOZOvMB_ZNbTuYB152C6j.GdjAjJMy8lAQx4sjxDjTPwlWNb8H_3L31z4z5TUMYHo3ecAmfhK29Q; path=/; expires=Tue, 10-Sep-24 17:38:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c110579d8a37ee0-MAA', 'content-encoding': 'gzip'})
+Query categorized under: {"category": "medibot"}
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Received voice navigation query: im feeling dizzy
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nQuery: im feeling dizzy\n\nCategory:\nJust no need any explanation give me with a single  one word answer "}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA8E8CEF0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029CA8E69B50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA8AA9AF0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:09:11 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29933'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'134ms'), (b'x-request-id', b'req_01j7eej7v7e7yaevnr6remd34e'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=EZ.B1zU6q_PgoBZrPxCkRF7dWN.JylqSwG2gzclHcQU-1725988151-1.0.1.1-0QPiNlw6hR02qjoeen.yef8_pELzKjIMUWrDxaT8c2CzoaIqoMgEYIieY.D68io2y9I_0TBjE7HviNOmR4C90Q; path=/; expires=Tue, 10-Sep-24 17:39:11 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c110637cbf09144-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:09:11 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29933', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '134ms', 'x-request-id': 'req_01j7eej7v7e7yaevnr6remd34e', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=EZ.B1zU6q_PgoBZrPxCkRF7dWN.JylqSwG2gzclHcQU-1725988151-1.0.1.1-0QPiNlw6hR02qjoeen.yef8_pELzKjIMUWrDxaT8c2CzoaIqoMgEYIieY.D68io2y9I_0TBjE7HviNOmR4C90Q; path=/; expires=Tue, 10-Sep-24 17:39:11 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c110637cbf09144-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Received voice navigation query: check my wound on my leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nQuery: check my wound on my leg\n\nCategory:\nJust no need any explanation give me with a single  one word answer "}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA9293140>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029CA6811C50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA92933E0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:09:36 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29931'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'138ms'), (b'x-request-id', b'req_01j7eek0nxfpmanr72tgxf0fbz'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=0ovwf2gLr_VJR6QtQGqg2.WxJ56mqg6mFX4QQmToiS8-1725988176-1.0.1.1-qcT8PShvgF9EvSoGT.eE12Dwtba8wIuhqUDnYlk3rr6WAlULFiRuvVrTR9mmmq69QjY4PrebZFHYUO1L_1Jx7g; path=/; expires=Tue, 10-Sep-24 17:39:36 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1106d6b9268001-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:09:36 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29931', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '138ms', 'x-request-id': 'req_01j7eek0nxfpmanr72tgxf0fbz', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=0ovwf2gLr_VJR6QtQGqg2.WxJ56mqg6mFX4QQmToiS8-1725988176-1.0.1.1-qcT8PShvgF9EvSoGT.eE12Dwtba8wIuhqUDnYlk3rr6WAlULFiRuvVrTR9mmmq69QjY4PrebZFHYUO1L_1Jx7g; path=/; expires=Tue, 10-Sep-24 17:39:36 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1106d6b9268001-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Received voice navigation query: scan my wound on my leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nQuery: scan my wound on my leg\n\nCategory:\nJust no need any explanation give me with a single  one word answer "}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA92D9790>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029CA92CDE50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029CA92D8200>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:09:46 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29932'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'136ms'), (b'x-request-id', b'req_01j7eekak8etzbme09tc53kg1f'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=ntfdMTrTuT5a.ND4LZ6l2XYL3rwpPulFd5Cu0hotsD8-1725988186-1.0.1.1-N9BX_Kid5s3wn94STQsavb_VJS83fGddPnJPfer2JK6YnbvZuO_4E4a7vDMLPqbN47Pehh20xYS_owO9jdVLXA; path=/; expires=Tue, 10-Sep-24 17:39:46 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1107163f257f45-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:09:46 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29932', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '136ms', 'x-request-id': 'req_01j7eekak8etzbme09tc53kg1f', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=ntfdMTrTuT5a.ND4LZ6l2XYL3rwpPulFd5Cu0hotsD8-1725988186-1.0.1.1-N9BX_Kid5s3wn94STQsavb_VJS83fGddPnJPfer2JK6YnbvZuO_4E4a7vDMLPqbN47Pehh20xYS_owO9jdVLXA; path=/; expires=Tue, 10-Sep-24 17:39:46 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1107163f257f45-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+close.started
+close.complete
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+close.started
+close.complete
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Received voice navigation query: scan my wound on my leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: scan my wound on my leg\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE77FD97C0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE7A5A7650> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7A379AC0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:17:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7ef0yqseqdab7g97ch0anc6'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=cD..Oz3hfjZZG3UrvUEV8y_G9.RtHCbOPwfoKah7ipY-1725988633-1.0.1.1-zpLLnA6Uz3eOXqsrhNDXRkrIWMYGnMoI8fc8a_KWwXtTjFuG3FMTJ8n9985_tuko9nv1GawhQEN1QSEQjd.qwg; path=/; expires=Tue, 10-Sep-24 17:47:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1111fd48e97ecd-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:17:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7ef0yqseqdab7g97ch0anc6', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=cD..Oz3hfjZZG3UrvUEV8y_G9.RtHCbOPwfoKah7ipY-1725988633-1.0.1.1-zpLLnA6Uz3eOXqsrhNDXRkrIWMYGnMoI8fc8a_KWwXtTjFuG3FMTJ8n9985_tuko9nv1GawhQEN1QSEQjd.qwg; path=/; expires=Tue, 10-Sep-24 17:47:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1111fd48e97ecd-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+Received voice navigation query: check my wound on my leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check my wound on my leg\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AAB2E70>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE77FE1950> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AAB1100>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:17:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29754'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'492ms'), (b'x-request-id', b'req_01j7ef1607e8sadrcbtfccj4de'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=EtoSoOw7W7RFpTAVclvT9qK04e9vbZYOOLqS5K1JJjw-1725988640-1.0.1.1-Kpv1UpA.XrBrhgH1K0ry8ZW1idn59POjrp3obQ0oLSJrY00hmcwU.9i0DC1eEO0hRiGWC86OSxPWSgM9VSO6Bw; path=/; expires=Tue, 10-Sep-24 17:47:20 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c11122c0b187eeb-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:17:20 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29754', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '492ms', 'x-request-id': 'req_01j7ef1607e8sadrcbtfccj4de', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=EtoSoOw7W7RFpTAVclvT9qK04e9vbZYOOLqS5K1JJjw-1725988640-1.0.1.1-Kpv1UpA.XrBrhgH1K0ry8ZW1idn59POjrp3obQ0oLSJrY00hmcwU.9i0DC1eEO0hRiGWC86OSxPWSgM9VSO6Bw; path=/; expires=Tue, 10-Sep-24 17:47:20 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c11122c0b187eeb-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+close.started
+close.complete
+Received voice navigation query: having severe headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: having severe headache\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AAB1C10>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE7A488C50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AAB0200>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+close.started
+close.complete
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:17:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7ef1k5me2kby24rz0w492vx'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3k870h3JImn1FynXCLo5wGddQkWnLcYnglF_B.ChkhI-1725988654-1.0.1.1-ViaoNtRcwJvem7HyIVJvqp6jvM8xqKtfs7se6wCWwTiZwTlkH2jIlSIuv8.pZFaHg8hlAUKtgDxTSRIg9I.09w; path=/; expires=Tue, 10-Sep-24 17:47:34 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1112805875b29f-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:17:34 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7ef1k5me2kby24rz0w492vx', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=3k870h3JImn1FynXCLo5wGddQkWnLcYnglF_B.ChkhI-1725988654-1.0.1.1-ViaoNtRcwJvem7HyIVJvqp6jvM8xqKtfs7se6wCWwTiZwTlkH2jIlSIuv8.pZFaHg8hlAUKtgDxTSRIg9I.09w; path=/; expires=Tue, 10-Sep-24 17:47:34 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1112805875b29f-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Received voice navigation query: check my prescriptions
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check my prescriptions\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AA61D00>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE7A614F50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AA62AE0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:18:28 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7ef37cqe5yse99eqd2qtq2g'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=m2KtNUljNZRz_nOpcqQDGWvltbeNAWVR2uewKh0YNHg-1725988708-1.0.1.1-u_ENxnA0ABk1ubPwZgjqw8FCgmEmZwhbG8DjcSl32Df4caB_y99ui9TnfiMWLHbYsl7gISPn4JqOhlbdlAMvCQ; path=/; expires=Tue, 10-Sep-24 17:48:28 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1113ce7f177e96-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:18:28 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7ef37cqe5yse99eqd2qtq2g', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=m2KtNUljNZRz_nOpcqQDGWvltbeNAWVR2uewKh0YNHg-1725988708-1.0.1.1-u_ENxnA0ABk1ubPwZgjqw8FCgmEmZwhbG8DjcSl32Df4caB_y99ui9TnfiMWLHbYsl7gISPn4JqOhlbdlAMvCQ; path=/; expires=Tue, 10-Sep-24 17:48:28 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1113ce7f177e96-MAA', 'content-encoding': 'gzip'})
+Query categorized under: upload_prescription
+Received voice navigation query: consult mr.Karthikeyan for my surgery
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: consult mr.Karthikeyan for my surgery\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AA60650>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE7AA9C6D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AA61CA0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:18:44 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29751'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'498ms'), (b'x-request-id', b'req_01j7ef3qxged2ata45vt07zg9s'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=VKIj3byiMROkJkklo9Bm3FQpeqi0UGOQQg_rjQW5C6c-1725988724-1.0.1.1-I5eWbKr9ZLQQYbP9c7Hf83H1JhBsvi4FJZEBFovEDs4OZso8UY2NgtFamwmkkS9rQ5bSaT4eLRzqiZK7oPamog; path=/; expires=Tue, 10-Sep-24 17:48:44 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1114384d717f93-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:18:44 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29751', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '498ms', 'x-request-id': 'req_01j7ef3qxged2ata45vt07zg9s', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=VKIj3byiMROkJkklo9Bm3FQpeqi0UGOQQg_rjQW5C6c-1725988724-1.0.1.1-I5eWbKr9ZLQQYbP9c7Hf83H1JhBsvi4FJZEBFovEDs4OZso8UY2NgtFamwmkkS9rQ5bSaT4eLRzqiZK7oPamog; path=/; expires=Tue, 10-Sep-24 17:48:44 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1114384d717f93-MAA', 'content-encoding': 'gzip'})
+Query categorized under: book_appointment
+Received voice navigation query: change my user details
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: change my user details\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AB46090>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001FE7AA9CC50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001FE7AB45550>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:19:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7ef49qpe8ys1ywnbfj0he9m'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=dF19b1A0_ECwewixQnsfPV5S84e0HhcGM4MzwtfGLaQ-1725988743-1.0.1.1-RbmNTkwEag.67_o8AzCpU0FqWcnlElHBp1lMvMv3JMnqO4VSPCgGVnr6KQDuN_dLJ6ab6vFV3ombtJI_3HgdCg; path=/; expires=Tue, 10-Sep-24 17:49:03 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1114aa4ab28013-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:19:03 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7ef49qpe8ys1ywnbfj0he9m', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=dF19b1A0_ECwewixQnsfPV5S84e0HhcGM4MzwtfGLaQ-1725988743-1.0.1.1-RbmNTkwEag.67_o8AzCpU0FqWcnlElHBp1lMvMv3JMnqO4VSPCgGVnr6KQDuN_dLJ6ab6vFV3ombtJI_3HgdCg; path=/; expires=Tue, 10-Sep-24 17:49:03 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1114aa4ab28013-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+close.started
+close.complete
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+Watching for file changes with StatReloader
+Received voice navigation query: change my user details
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: change my user details\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024014159310>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024014188E50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000024012686570>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:22:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7efagqye4mrc3q3hqbpe5dq'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=OjxZOCnBTqElXhqrD9zXCkskL6zjJws4qQi8HNfZhgg-1725988946-1.0.1.1-Kels.yGm.HksffBgiyFA88xa5..km02.u4T9folK_8U4Pyyu6uzB.GEYTQjEC6oDhldJ56D2NDg88Kzr1vhQhA; path=/; expires=Tue, 10-Sep-24 17:52:26 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1119a3ea357f00-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:22:26 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7efagqye4mrc3q3hqbpe5dq', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=OjxZOCnBTqElXhqrD9zXCkskL6zjJws4qQi8HNfZhgg-1725988946-1.0.1.1-Kels.yGm.HksffBgiyFA88xa5..km02.u4T9folK_8U4Pyyu6uzB.GEYTQjEC6oDhldJ56D2NDg88Kzr1vhQhA; path=/; expires=Tue, 10-Sep-24 17:52:26 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1119a3ea357f00-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: feel like i have an headache\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000240145AEF30>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024011B31950> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000240145AE240>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:22:41 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7efaz37fyv8p6pfjr1jw041'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=JKyVMgclotY3hZT0bx4jlaKTXZm8CbotTgdaWxkhbF0-1725988961-1.0.1.1-O0X7fm81RlHxOrHWAJbb9G795_73NiMAa62vlb34hEZ._.XBTOF7k8xI.lhzhD1kcfDuPP7WwfFxGcVIVQ6WaQ; path=/; expires=Tue, 10-Sep-24 17:52:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1119ffc8b57ee5-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:22:41 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7efaz37fyv8p6pfjr1jw041', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=JKyVMgclotY3hZT0bx4jlaKTXZm8CbotTgdaWxkhbF0-1725988961-1.0.1.1-O0X7fm81RlHxOrHWAJbb9G795_73NiMAa62vlb34hEZ._.XBTOF7k8xI.lhzhD1kcfDuPP7WwfFxGcVIVQ6WaQ; path=/; expires=Tue, 10-Sep-24 17:52:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1119ffc8b57ee5-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+close.started
+close.complete
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'feel like i have an headache'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000240145AE7B0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000024013FD41D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000240145AFCB0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:22:42 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29988'), (b'x-ratelimit-reset-requests', b'11.066999999s'), (b'x-ratelimit-reset-tokens', b'24ms'), (b'x-request-id', b'req_01j7efb00dfr6rah081206k1fn'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Sf2VZ.Kdgr3j5kPbdTy9qMKK2kY9uD6KoN7GWGSNnd0-1725988962-1.0.1.1-lIoWCthAqS2QJL.kPnJUzQCdvsGgRepIlKfiazeBMaUFxeAVR6Re062Lew1aASeMgLvu1idl0jCL4Oau1pzDBQ; path=/; expires=Tue, 10-Sep-24 17:52:42 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111a059bec7ed3-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:22:42 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29988', 'x-ratelimit-reset-requests': '11.066999999s', 'x-ratelimit-reset-tokens': '24ms', 'x-request-id': 'req_01j7efb00dfr6rah081206k1fn', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=Sf2VZ.Kdgr3j5kPbdTy9qMKK2kY9uD6KoN7GWGSNnd0-1725988962-1.0.1.1-lIoWCthAqS2QJL.kPnJUzQCdvsGgRepIlKfiazeBMaUFxeAVR6Re062Lew1aASeMgLvu1idl0jCL4Oau1pzDBQ; path=/; expires=Tue, 10-Sep-24 17:52:42 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111a059bec7ed3-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+close.started
+close.complete
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+Watching for file changes with StatReloader
+Received voice navigation query: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: feel like i have an headache\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000220B33A8350>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x00000220B38DBBD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000220B3119AF0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:24:16 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7efdvs8faatzjjxb812wyew'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=P6zfgn8dMNBUpqEePRt4Zoc.0i7lKOWt3BAVir8Y9Zs-1725989056-1.0.1.1-X6xl..U6uLrk5JqpERLPcH8xdTN.L5Y76UYCGtoJgJPS0wdhpled6DBoysRF29sc204NB7vpkaAb5sA4CEh4BA; path=/; expires=Tue, 10-Sep-24 17:54:16 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111c50f8047ec7-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:24:16 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7efdvs8faatzjjxb812wyew', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=P6zfgn8dMNBUpqEePRt4Zoc.0i7lKOWt3BAVir8Y9Zs-1725989056-1.0.1.1-X6xl..U6uLrk5JqpERLPcH8xdTN.L5Y76UYCGtoJgJPS0wdhpled6DBoysRF29sc204NB7vpkaAb5sA4CEh4BA; path=/; expires=Tue, 10-Sep-24 17:54:16 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111c50f8047ec7-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short as a remedy for the given query - feel like i have an headache  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000220B37A65A0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x00000220B38DAFD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000220B37A7E00>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:24:18 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29970'), (b'x-ratelimit-reset-requests', b'11.289999999s'), (b'x-ratelimit-reset-tokens', b'60ms'), (b'x-request-id', b'req_01j7efdwfffhv9p533gd97qbm6'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Wd1x8KQUoOxMJSMNgWw_8M3NuGpqPvhFQV9RqSkLpPU-1725989058-1.0.1.1-SLPtKSLGp8iKLL3DK6t0ZCDUjD5NmgIHOqiRAwEhXHDTUCTwNX6qkMGyWQ55.eVZGXM5jsvapb9.MkXQTTJr1w; path=/; expires=Tue, 10-Sep-24 17:54:18 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111c557cb67fa3-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:24:18 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29970', 'x-ratelimit-reset-requests': '11.289999999s', 'x-ratelimit-reset-tokens': '60ms', 'x-request-id': 'req_01j7efdwfffhv9p533gd97qbm6', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=Wd1x8KQUoOxMJSMNgWw_8M3NuGpqPvhFQV9RqSkLpPU-1725989058-1.0.1.1-SLPtKSLGp8iKLL3DK6t0ZCDUjD5NmgIHOqiRAwEhXHDTUCTwNX6qkMGyWQ55.eVZGXM5jsvapb9.MkXQTTJr1w; path=/; expires=Tue, 10-Sep-24 17:54:18 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111c557cb67fa3-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+C:\Users\aswat\Medecro\ror-django-backend\classify\utils.py changed, reloading.
+close.started
+close.complete
+close.started
+close.complete
+Watching for file changes with StatReloader
+Received voice navigation query: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: feel like i have an headache\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AADC3C890>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022AADD31FD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AAD5B9AC0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:24:47 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7efesffeetv8janwe3cvxh4'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=wEhFZ5JVgVFQ8Ik6xXEzAQlOPl0KZBaYgoZwa_e0t9Y-1725989087-1.0.1.1-d2AyDQ0S1UZxyRxxfmzNRuD9Xz3Ifid1ryjeDuD7mChEM0KIzHcT0EX0hmeuap.y6jP58uYNwB3GW5mN8.6Blw; path=/; expires=Tue, 10-Sep-24 17:54:47 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111d0f092d178b-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:24:47 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7efesffeetv8janwe3cvxh4', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=wEhFZ5JVgVFQ8Ik6xXEzAQlOPl0KZBaYgoZwa_e0t9Y-1725989087-1.0.1.1-d2AyDQ0S1UZxyRxxfmzNRuD9Xz3Ifid1ryjeDuD7mChEM0KIzHcT0EX0hmeuap.y6jP58uYNwB3GW5mN8.6Blw; path=/; expires=Tue, 10-Sep-24 17:54:47 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111d0f092d178b-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: feel like i have an headache
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short only the remedy for the given query - feel like i have an headache  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AAE12AD80>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022AADC36250> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AAE129AF0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:24:49 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29969'), (b'x-ratelimit-reset-requests', b'10.424999999s'), (b'x-ratelimit-reset-tokens', b'62ms'), (b'x-request-id', b'req_01j7efev0ne9htt6w1aeweekp8'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=LmtSNaX.O7P72z78al5fTPxvvKws5aJ1ZqOtPl3wENU-1725989089-1.0.1.1-h4Uje0byzF_PiSthf11u9nVUkmebRnexezupn6Uz.oSIndU1dSEbnaiFt0VEYQFdemk9fUMnv49mEbzdq3yoPQ; path=/; expires=Tue, 10-Sep-24 17:54:49 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111d18eb4c7efa-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:24:49 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29969', 'x-ratelimit-reset-requests': '10.424999999s', 'x-ratelimit-reset-tokens': '62ms', 'x-request-id': 'req_01j7efev0ne9htt6w1aeweekp8', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=LmtSNaX.O7P72z78al5fTPxvvKws5aJ1ZqOtPl3wENU-1725989089-1.0.1.1-h4Uje0byzF_PiSthf11u9nVUkmebRnexezupn6Uz.oSIndU1dSEbnaiFt0VEYQFdemk9fUMnv49mEbzdq3yoPQ; path=/; expires=Tue, 10-Sep-24 17:54:49 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111d18eb4c7efa-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Received voice navigation query: check my wound on leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check my wound on leg\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AAE209FA0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022AADB5CBD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022AAE209910>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+close.started
+close.complete
+close.started
+close.complete
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:25:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7eff9pjfz3aanattqyx89c4'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=SWs.NeOcAunmgqS0QYNRohneW81rJ002t5INkKpAC9w-1725989104-1.0.1.1-A5gUkxncRVQZUsc2cBwPwah..ZSM717053gkTNPQkUF0AFCbV3GbrX2Jm9Se7C9wLQUckDJ65ECVKfILrPBASQ; path=/; expires=Tue, 10-Sep-24 17:55:04 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111d76dc167eeb-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:25:04 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7eff9pjfz3aanattqyx89c4', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=SWs.NeOcAunmgqS0QYNRohneW81rJ002t5INkKpAC9w-1725989104-1.0.1.1-A5gUkxncRVQZUsc2cBwPwah..ZSM717053gkTNPQkUF0AFCbV3GbrX2Jm9Se7C9wLQUckDJ65ECVKfILrPBASQ; path=/; expires=Tue, 10-Sep-24 17:55:04 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111d76dc167eeb-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+close.started
+close.complete

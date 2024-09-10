@@ -60,32 +60,32 @@ def login(request):
     else:
         return Response({'error': 'Invalid password'}, status=401)
 
-@api_view(['GET'])
-@permission_classes([AllowAny])  
-def get_user(request):
-    auth_header = request.headers.get('Authorization')
+# @api_view(['GET'])
+# @permission_classes([AllowAny])  
+# def get_user(request):
+#     auth_header = request.headers.get('Authorization')
     
-    if not auth_header or not auth_header.startswith('Bearer '):
-        raise AuthenticationFailed('Invalid token header. No token found.')
+#     if not auth_header or not auth_header.startswith('Bearer '):
+#         raise AuthenticationFailed('Invalid token header. No token found.')
     
-    token = auth_header.split(' ')[1]
+#     token = auth_header.split(' ')[1]
     
-    try:
-        # Decode the token
-        decoded_token = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
+#     try:
+#         # Decode the token
+#         decoded_token = jwt.decode(token, settings.SECRET_KEY, algorithms=["HS256"])
         
-        username = decoded_token.get('username')
-        phonenumber = decoded_token.get('phonenumber')
+#         username = decoded_token.get('username')
+#         phonenumber = decoded_token.get('phonenumber')
         
-        if not username or not phonenumber:
-            raise AuthenticationFailed('Invalid token. Missing data.')
+#         if not username or not phonenumber:
+#             raise AuthenticationFailed('Invalid token. Missing data.')
 
-        return Response({
-            'username': username,
-            'phonenumber': phonenumber,
-        })
+#         return Response({
+#             'username': username,
+#             'phonenumber': phonenumber,
+#         })
         
-    except jwt.ExpiredSignatureError:
-        raise AuthenticationFailed('Token has expired.')
-    except jwt.InvalidTokenError as e:
-        raise AuthenticationFailed(f'Invalid token: {str(e)}')
+#     except jwt.ExpiredSignatureError:
+#         raise AuthenticationFailed('Token has expired.')
+#     except jwt.InvalidTokenError as e:
+#         raise AuthenticationFailed(f'Invalid token: {str(e)}')
