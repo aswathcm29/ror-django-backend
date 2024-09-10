@@ -53,5 +53,4 @@ def get_user(request):
     user = request.user
     return Response({
         'username': user.username,
-        'phonenumber': user.phonenumber
     })
