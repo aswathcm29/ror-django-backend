@@ -216,3 +216,1928 @@ C:\pkcibiyanna\projects\ROR\ror_django_backend\ror_django_backend\settings.py ch
 Watching for file changes with StatReloader
 Not Found: /
 Not Found: /favicon.ico
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /v1/process-voice/
+Internal Server Error: /api/classify/v1/process-voice/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+           ^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1561, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 747, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 557, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\expressions.py", line 1309, in as_sql
+    sql = ".".join(map(compiler.quote_name_unless_alias, identifiers))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 548, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+Internal Server Error: /api/classify/v1/text-voice-generator/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+           ^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1561, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 747, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 557, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\expressions.py", line 1309, in as_sql
+    sql = ".".join(map(compiler.quote_name_unless_alias, identifiers))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 548, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /api/register
+Not Found: /users/api/register
+Not Found: /users/auth/register
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+           ^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1561, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 747, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 557, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\expressions.py", line 1309, in as_sql
+    sql = ".".join(map(compiler.quote_name_unless_alias, identifiers))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 548, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+Watching for file changes with StatReloader
+Not Found: /users/api/register
+Not Found: /
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 244, in _get_session
+    return self._session_cache
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+           ^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 251, in inner
+    self._setup()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\functional.py", line 404, in _setup
+    self._wrapped = self._setupfunc()
+                    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 37, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+                                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\middleware.py", line 17, in get_user
+    request._cached_user = auth.get_user(request)
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 209, in get_user
+    user_id = _get_user_session_key(request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 62, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+                                               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+           ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\base.py", line 249, in _get_session
+    self._session_cache = self.load()
+                          ^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 55, in load
+    s = self._get_session_from_db()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    return self.model.objects.get(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1561, in execute_sql
+    sql, params = self.as_sql()
+                  ^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 747, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 84, in pre_sql_setup
+    self.setup_query(with_col_aliases=with_col_aliases)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 73, in setup_query
+    self.select, self.klass_info, self.annotation_col_map = self.get_select(
+                                                            ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 296, in get_select
+    sql, params = self.compile(col)
+                  ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 557, in compile
+    sql, params = node.as_sql(self, self.connection)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\expressions.py", line 1309, in as_sql
+    sql = ".".join(map(compiler.quote_name_unless_alias, identifiers))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 548, in quote_name_unless_alias
+    r = self.connection.ops.quote_name(name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\dummy\base.py", line 20, in complain
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the ENGINE value. Check settings documentation for more details.
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+Method Not Allowed: /users/register/
+Method Not Allowed: /users/login/
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 21, in create
+    role=validated_data['role']
+         ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'role'
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 21, in create
+    role=validated_data['role']
+         ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'role'
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 20, in create
+    phonenumber=validated_data['phonenumber'],
+                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'phonenumber'
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 21, in create
+    role=validated_data['role']
+         ~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'role'
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 23, in create
+    user.set_password(validated_data['password'])
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_password'
+Watching for file changes with StatReloader
+Not Found: /
+Bad Request: /users/register/
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 16, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 22, in create
+    user.set_password(validated_data['password'])
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_password'
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /users/register/
+Unauthorized: /users/login/
+Bad Request: /users/login/
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+Unauthorized: /users/login/
+Internal Server Error: /users/register
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/users/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /users/register
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/users/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Internal Server Error: /users/register
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\deprecation.py", line 131, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/users/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Bad Request: /users/login/
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 30, in login
+    refresh = RefreshToken.for_user(username,password)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Token.for_user() takes 2 positional arguments but 3 were given
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 30, in login
+    refresh = RefreshToken.for_user(username,password)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Token.for_user() takes 2 positional arguments but 3 were given
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 30, in login
+    refresh = RefreshToken.for_user(username,password)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Token.for_user() takes 2 positional arguments but 3 were given
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+Unauthorized: /users/login/
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 15, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 23, in create
+    user.set_password(validated_data['password'])
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_password'
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 14, in register
+    if serializer.is_valid():
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 499, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\fields.py", line 757, in run_validation
+    return super().run_validation(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\fields.py", line 539, in run_validation
+    self.run_validators(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\fields.py", line 551, in run_validators
+    validator(value, self)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\validators.py", line 73, in __call__
+    if qs_exists(queryset):
+       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\validators.py", line 21, in qs_exists
+    return queryset.exists()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1572, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 255, in connect
+    conn_params = self.get_connection_params()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\postgresql\base.py", line 241, in get_connection_params
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: settings.DATABASES is improperly configured. Please supply the NAME or OPTIONS['service'] value.
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 15, in register
+    user = serializer.save()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py", line 23, in create
+    user.set_password(validated_data['password'])
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'set_password'
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /users/register/
+Bad Request: /users/login/
+Unauthorized: /users/login/
+Method Not Allowed: /users/register/
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column user_user.last_login does not exist
+LINE 1: SELECT "user_user"."id", "user_user"."password", "user_user"...
+                                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 32, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column user_user.last_login does not exist
+LINE 1: SELECT "user_user"."id", "user_user"."password", "user_user"...
+                                                         ^
+
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "ep-sweet-shadow-a4zhtpsy-pooler.us-east-1.aws.neon.tech" (52.20.107.131), port 5432 failed: SSL SYSCALL error: No error (0x00000000/0)
+connection to server at "ep-sweet-shadow-a4zhtpsy-pooler.us-east-1.aws.neon.tech" (52.20.107.131), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 32, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1572, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\postgresql\base.py", line 332, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "ep-sweet-shadow-a4zhtpsy-pooler.us-east-1.aws.neon.tech" (52.20.107.131), port 5432 failed: SSL SYSCALL error: No error (0x00000000/0)
+connection to server at "ep-sweet-shadow-a4zhtpsy-pooler.us-east-1.aws.neon.tech" (52.20.107.131), port 5432 failed: ERROR:  connection is insecure (try using `sslmode=require`)
+
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column user_user.last_login does not exist
+LINE 1: SELECT "user_user"."id", "user_user"."password", "user_user"...
+                                                         ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 32, in login
+    user = authenticate(username=username, password=password)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\__init__.py", line 79, in authenticate
+    user = backend.authenticate(request, **credentials)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\backends.py", line 42, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column user_user.last_login does not exist
+LINE 1: SELECT "user_user"."id", "user_user"."password", "user_user"...
+                                                         ^
+
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /users/login/
+Bad Request: /users/register/
+Forbidden: /users/user/
+Forbidden: /users/user/
+Forbidden: /users/user/
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /users/getuser/
+Forbidden: /users/getuser/
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /users/getuser/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden: /users/getuser/
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+Internal Server Error: /users/login/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 324, in perform_authentication
+    request.user
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 230, in user
+    with wrap_attributeerrors():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 78, in wrap_attributeerrors
+    raise exc.with_traceback(info[2])
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 74, in wrap_attributeerrors
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 231, in user
+    self._authenticate()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\request.py", line 384, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^
+rest_framework.request.WrappedAttributeError: 'IsAuthenticated' object has no attribute 'authenticate'
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /users/getuser/
+Not Found: /users/getuser/
+Forbidden: /users/profile/
+Watching for file changes with StatReloader
+Not Found: /

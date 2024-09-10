@@ -1,5 +1,5 @@
 # voice_processor/urls.py
-from django.urls import path
+from django.urls import path # type: ignore
 from .views import ProcessVoiceInput, TextVoiceGenerator
 
 urlpatterns = [
