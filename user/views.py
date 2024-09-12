@@ -27,6 +27,9 @@ def generate_token(user):
 @permission_classes([AllowAny])
 def register_patient(request):
     phonenumber = request.data.get('phonenumber')
+    
+    if not phonenumber:
+        return Response({'error': 'Phone number is required'}, status=400)
 
     if Patient.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
@@ -43,6 +46,9 @@ def register_patient(request):
 @permission_classes([AllowAny])
 def login_patient(request):
     phonenumber = request.data.get('phonenumber')
+    
+    if not phonenumber:
+        return Response({'error': 'Phone number is required'}, status=400)
 
     try:
         patient = Patient.objects.get(phonenumber=phonenumber)
@@ -58,6 +64,9 @@ def login_patient(request):
 @permission_classes([AllowAny])
 def register_doctor(request):
     phonenumber = request.data.get('phonenumber')
+    
+    if not phonenumber:
+        return Response({'error': 'Phone number is required'}, status=400)
 
     if Doctor.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
@@ -74,6 +83,9 @@ def register_doctor(request):
 @permission_classes([AllowAny])
 def login_doctor(request):
     phonenumber = request.data.get('phonenumber')
+    
+    if not phonenumber:
+        return Response({'error': 'Phone number is required'}, status=400)
 
     try:
         doctor = Doctor.objects.get(phonenumber=phonenumber)
