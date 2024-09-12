@@ -13,6 +13,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from dotenv import load_dotenv
+
+
+
+load_dotenv()
+
 
 # Load environment variables from .env file
 
@@ -27,9 +33,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vd(*yei7#3hrs3j-nmqofciicnrk-6vbx8zw-romd4jt9r*gv-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG","False").lower() == "true"
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','172.17.12.83']
+
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','172.17.12.83','ror-django-backend-7pxm.onrender.com']
 
 
 # Application definition
@@ -89,11 +96,11 @@ WSGI_APPLICATION = 'ror_django_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'verceldb',
-        'USER': 'default',
-        'PASSWORD': 'YG1TnJqKLN7u',
-        'HOST':'ep-withered-field-a4zvopft-pooler.us-east-1.aws.neon.tech' ,
-        'PORT': '5432',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST':os.getenv('DB_HOST') ,
+        'PORT': os.getenv('DB_PORT'),
         },
        'OPTIONS': {
             'sslmode': 'require',  # This ensures SSL is used
