@@ -13,12 +13,14 @@ from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.exceptions import NotFound
 
 
+
 def generate_token(user):
     payload = {
         'phonenumber': user.phonenumber,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(days=1)
     }
     return jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')
+
 
 
 @api_view(['POST'])
@@ -36,6 +38,7 @@ def register_patient(request):
     return Response({'phonenumber': patient.phonenumber, 'token': token}, status=201)
 
 
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_patient(request):
@@ -48,6 +51,8 @@ def login_patient(request):
 
     token = generate_token(patient)
     return Response({'phonenumber': patient.phonenumber, 'token': token}, status=200)
+
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -62,6 +67,8 @@ def register_doctor(request):
 
     token = generate_token(doctor)
     return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=201)
+
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -79,29 +86,36 @@ def login_doctor(request):
 
 
 @api_view(['PATCH'])
-@permission_classes([IsAuthenticated])
-def update_profile(request):
-    user = request.user  # Get the current authenticated user
-    role = user.role     # Get the role of the user (doctor or patient)
+@permission_classes([AllowAny])
 
-    if not user:
-        raise NotFound('User not found.')
+def update_profile(request):
+    phone_number = request.data.get('phonenumber')
+
+    if not phone_number:
+        return Response({'error': 'Phone number is required'}, status=400)
+
+    try:
+        try:
+            user = Doctor.objects.get(phonenumber=phone_number)
+        except Doctor.DoesNotExist:
+            user = Patient.objects.get(phonenumber=phone_number)
+    except (Doctor.DoesNotExist, Patient.DoesNotExist):
+        return Response({'error': 'User not found with the provided phone number.'}, status=404)
+
+    role = user.role
 
     fields_to_update = {
         'doctor': ['name', 'phonenumber', 'specialization', 'experience_years', 'location_name'],
         'patient': ['name', 'phonenumber', 'medical_history', 'age', 'height', 'weight', 'gender', 'bloodgroup', 'location_name']
     }
 
-    # Ensure that the user's role is valid
     if role not in fields_to_update:
         return Response({'error': 'Invalid role'}, status=400)
 
-    # Loop through fields and update them only if provided in the request
     for field in fields_to_update[role]:
         if field in request.data and request.data.get(field) is not None:
             setattr(user, field, request.data.get(field))
 
-    # Save the updated user object
     user.save()
 
     return Response({'message': f'{role.capitalize()} profile updated successfully'}, status=200)
