@@ -1,9 +1,11 @@
-# user/urls.py
 from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),
-    # path('profile/', views.get_user, name='profile'),
+    path('patient/register', views.register_patient, name='register_patient'),
+    path('doctor/register', views.register_doctor, name='register_doctor'),
+    path('patient/login', views.login_patient, name='login_patient'),
+    path('doctor/login', views.login_doctor, name='login_doctor'),
+    path('update-profile/', views.update_profile, name='update_profile'),
+
 ]

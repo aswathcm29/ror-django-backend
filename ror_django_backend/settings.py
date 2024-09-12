@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-vd(*yei7#3hrs3j-nmqofciicnrk-6vbx8zw-romd4jt9r*gv-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app','172.17.12.83']
 
 
 # Application definition
@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     'user',
     'rest_framework',
     'rest_framework_simplejwt',
+    'corsheaders'
       
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -59,6 +61,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'ror_django_backend.urls'
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 TEMPLATES = [
     {
@@ -90,7 +94,10 @@ DATABASES = {
         'PASSWORD': 'YG1TnJqKLN7u',
         'HOST':'ep-withered-field-a4zvopft-pooler.us-east-1.aws.neon.tech' ,
         'PORT': '5432',
-        }
+        },
+       'OPTIONS': {
+            'sslmode': 'require',  # This ensures SSL is used
+        },
     }
 
 

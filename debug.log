@@ -3034,3 +3034,1268 @@ HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Hea
 Query categorized under: mediscanner
 close.started
 close.complete
+Watching for file changes with StatReloader
+Received voice navigation query: check my wound on leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check my wound on leg\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885B1AF0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC880D1B50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC87839AF0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:26:35 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7efj334e3ms6w647m658e9g'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=ywKAxBFXbLEZnbuCz1tN9tc8QKTnDC3JAMvf_0rZfYc-1725989195-1.0.1.1-T7xWOwTnAnxBeL6wYanvHkMSv9udfCUWv7j.RiAQChkT4QIyNcdKgB_N4q.aZyZDbQ_48fPYdbWUc1F4gNBZmA; path=/; expires=Tue, 10-Sep-24 17:56:35 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c111fb30a1c8026-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:26:35 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7efj334e3ms6w647m658e9g', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=ywKAxBFXbLEZnbuCz1tN9tc8QKTnDC3JAMvf_0rZfYc-1725989195-1.0.1.1-T7xWOwTnAnxBeL6wYanvHkMSv9udfCUWv7j.RiAQChkT4QIyNcdKgB_N4q.aZyZDbQ_48fPYdbWUc1F4gNBZmA; path=/; expires=Tue, 10-Sep-24 17:56:35 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c111fb30a1c8026-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+Received voice navigation query: check my wound on leg
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check my wound on leg\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885B0980>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC880D29D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885B08C0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:27:10 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29755'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'490ms'), (b'x-request-id', b'req_01j7efk4epe4bav76dsn05yy8d'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Z7lWSTkb2N0SAkkBupkEn6KTrNE6uoB8yrm_4xraaJ0-1725989230-1.0.1.1-CC5q5vgttz2kgt2LMYLs_CJXJTmi1LTatJTcAVmxXzhnLOpUZQGa0IRjn71hy7_cxNmc3LqgpFN3CH1oY_pWRg; path=/; expires=Tue, 10-Sep-24 17:57:10 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1120887a647e9d-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:27:10 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29755', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '490ms', 'x-request-id': 'req_01j7efk4epe4bav76dsn05yy8d', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=Z7lWSTkb2N0SAkkBupkEn6KTrNE6uoB8yrm_4xraaJ0-1725989230-1.0.1.1-CC5q5vgttz2kgt2LMYLs_CJXJTmi1LTatJTcAVmxXzhnLOpUZQGa0IRjn71hy7_cxNmc3LqgpFN3CH1oY_pWRg; path=/; expires=Tue, 10-Sep-24 17:57:10 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1120887a647e9d-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+Received voice navigation query: change my name
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: change my name\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC8851B680>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC8852D8D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC8851A210>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+close.started
+close.complete
+close.started
+close.complete
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:30:41 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29757'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'486ms'), (b'x-request-id', b'req_01j7efskv5f6wr5f9k80ckjakc'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=yCyVTpMfQMqn1cFZ78WSiILzjMEdrF8oQFpnrdEJuzI-1725989441-1.0.1.1-DEXBpdMDh.2ifCYJnylHHnIWrMfELS8z1Bwd0S_j0FjEF8fz1CG78BKc0bElpqBUiqypdFlg5uS9QLrxsoMlVQ; path=/; expires=Tue, 10-Sep-24 18:00:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1125b7ce047fdd-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:30:41 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29757', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '486ms', 'x-request-id': 'req_01j7efskv5f6wr5f9k80ckjakc', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=yCyVTpMfQMqn1cFZ78WSiILzjMEdrF8oQFpnrdEJuzI-1725989441-1.0.1.1-DEXBpdMDh.2ifCYJnylHHnIWrMfELS8z1Bwd0S_j0FjEF8fz1CG78BKc0bElpqBUiqypdFlg5uS9QLrxsoMlVQ; path=/; expires=Tue, 10-Sep-24 18:00:41 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1125b7ce047fdd-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: got fire burns
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: got fire burns\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885B2330>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC87EF85D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885B0290>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:30:53 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29757'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'486ms'), (b'x-request-id', b'req_01j7efszdafs3t2b0gvtw3m618'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=kvOJOStRlX2FIkXaNlk4J9856UcDK8FQ4V_jk2s172g-1725989453-1.0.1.1-AaqcGsgbk.K5VDuFlHV5ev_vLaZjR4IC6sIFgGi4Zr2pHDCH96YGCdSpu.JdEqPaYFqEagbcdBPqw.00LjS6Sw; path=/; expires=Tue, 10-Sep-24 18:00:53 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c112601c8047f41-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:30:53 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29757', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '486ms', 'x-request-id': 'req_01j7efszdafs3t2b0gvtw3m618', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=kvOJOStRlX2FIkXaNlk4J9856UcDK8FQ4V_jk2s172g-1725989453-1.0.1.1-AaqcGsgbk.K5VDuFlHV5ev_vLaZjR4IC6sIFgGi4Zr2pHDCH96YGCdSpu.JdEqPaYFqEagbcdBPqw.00LjS6Sw; path=/; expires=Tue, 10-Sep-24 18:00:53 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c112601c8047f41-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+Received voice navigation query: having stomach pain
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: having stomach pain\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC8845A1B0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC85A523D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC87DF63F0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:31:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29756'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'488ms'), (b'x-request-id', b'req_01j7eftjmeexj9hxg8hxh4yjmj'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=E4p6AxdRsnnXFcxGPRZW7t1sD_S7mp_kh8alqgb4cOM-1725989473-1.0.1.1-gWSQ7kxzCtwAyy1nuxHTSGiyWnYVfxqivnuY6oUJa2UdWsGfI3GbD7WC5d8g7nfzmzKScjZ4QggdCAzYBoPXyg; path=/; expires=Tue, 10-Sep-24 18:01:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c11267cdc227e69-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:31:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29756', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '488ms', 'x-request-id': 'req_01j7eftjmeexj9hxg8hxh4yjmj', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=E4p6AxdRsnnXFcxGPRZW7t1sD_S7mp_kh8alqgb4cOM-1725989473-1.0.1.1-gWSQ7kxzCtwAyy1nuxHTSGiyWnYVfxqivnuY6oUJa2UdWsGfI3GbD7WC5d8g7nfzmzKScjZ4QggdCAzYBoPXyg; path=/; expires=Tue, 10-Sep-24 18:01:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c11267cdc227e69-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: having stomach pain
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short only the remedy for the given query - having stomach pain  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F7AA0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC87EF90D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F45C0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:31:14 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29971'), (b'x-ratelimit-reset-requests', b'10.661s'), (b'x-ratelimit-reset-tokens', b'58ms'), (b'x-request-id', b'req_01j7eftkybexja2awt9h394590'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=FD3.29zohUSJO9H.WnAs5azOXrruYhxXJV9qw4b0JVk-1725989474-1.0.1.1-nPaRslLidwCAVZydYI1NXrlYiWUpYm0Y7JZiHMLg9xMwhJy1yuGSonWGmgazXAf3TpghgR34X5WlI6qmL1SUlA; path=/; expires=Tue, 10-Sep-24 18:01:14 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1126854dc87f2b-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:31:14 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29971', 'x-ratelimit-reset-requests': '10.661s', 'x-ratelimit-reset-tokens': '58ms', 'x-request-id': 'req_01j7eftkybexja2awt9h394590', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=FD3.29zohUSJO9H.WnAs5azOXrruYhxXJV9qw4b0JVk-1725989474-1.0.1.1-nPaRslLidwCAVZydYI1NXrlYiWUpYm0Y7JZiHMLg9xMwhJy1yuGSonWGmgazXAf3TpghgR34X5WlI6qmL1SUlA; path=/; expires=Tue, 10-Sep-24 18:01:14 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1126854dc87f2b-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+close.started
+close.complete
+Received voice navigation query: feeling depressed
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: feeling depressed\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F66F0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC85A516D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F5AC0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:31:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29756'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'488ms'), (b'x-request-id', b'req_01j7efvzkffe0s6r4jpy977h16'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=a6ZKMj0XqaQup.c9rUHchOllc4GDgLjEG03Q8H3E.Fk-1725989519-1.0.1.1-QtqEThO5.deDhfu.Zui26.7g_FJWmsY2X6dytuMWw5wLCG61DSi6OxkVRjVxZZKPI_N8zTTSSJiktPdGbskpRw; path=/; expires=Tue, 10-Sep-24 18:01:59 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c112798ad387f37-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:31:59 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29756', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '488ms', 'x-request-id': 'req_01j7efvzkffe0s6r4jpy977h16', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=a6ZKMj0XqaQup.c9rUHchOllc4GDgLjEG03Q8H3E.Fk-1725989519-1.0.1.1-QtqEThO5.deDhfu.Zui26.7g_FJWmsY2X6dytuMWw5wLCG61DSi6OxkVRjVxZZKPI_N8zTTSSJiktPdGbskpRw; path=/; expires=Tue, 10-Sep-24 18:01:59 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c112798ad387f37-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: feeling depressed
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short only the remedy for the given query - feeling depressed  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F62D0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC8852F6D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F61E0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:32:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29971'), (b'x-ratelimit-reset-requests', b'11.003s'), (b'x-ratelimit-reset-tokens', b'58ms'), (b'x-request-id', b'req_01j7efw0jqf37vb813yrsf2vre'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=5eVwQde.IF6.vJMBMAznAKQF82TvhMRNMKyUo1l5ijU-1725989520-1.0.1.1-_StbVMygjaOeCYlKuz3gtqC7EfOabQjloIDMH9FtrCSwAs3fb_jwceWj05_AdsPbUiXfoT82FJw9_EFmLUF9lA; path=/; expires=Tue, 10-Sep-24 18:02:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1127a2e8ae7f46-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:32:00 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29971', 'x-ratelimit-reset-requests': '11.003s', 'x-ratelimit-reset-tokens': '58ms', 'x-request-id': 'req_01j7efw0jqf37vb813yrsf2vre', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=5eVwQde.IF6.vJMBMAznAKQF82TvhMRNMKyUo1l5ijU-1725989520-1.0.1.1-_StbVMygjaOeCYlKuz3gtqC7EfOabQjloIDMH9FtrCSwAs3fb_jwceWj05_AdsPbUiXfoT82FJw9_EFmLUF9lA; path=/; expires=Tue, 10-Sep-24 18:02:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1127a2e8ae7f46-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Received voice navigation query: Checkout Mr.Aadhavan who is a specialist
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: Checkout Mr.Aadhavan who is a specialist\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B0F50>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC885C4BD0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B1070>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:32:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29750'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'500ms'), (b'x-request-id', b'req_01j7efwt0sfdav05e8kwfzar4x'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=2C.hrk7hX2NIep0ZvYIUNE.bDbdi67AtAi5RhA7Libk-1725989546-1.0.1.1-ZvB..v601V6tdnIIJtjrgPVt3HWuA6s._24zqJj6b8O0unJE0xq7q8.dTB8bwiBwo8xMFXoAGGV5CHtjAZTKCA; path=/; expires=Tue, 10-Sep-24 18:02:26 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c112845ba40397d-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:32:26 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29750', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '500ms', 'x-request-id': 'req_01j7efwt0sfdav05e8kwfzar4x', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=2C.hrk7hX2NIep0ZvYIUNE.bDbdi67AtAi5RhA7Libk-1725989546-1.0.1.1-ZvB..v601V6tdnIIJtjrgPVt3HWuA6s._24zqJj6b8O0unJE0xq7q8.dTB8bwiBwo8xMFXoAGGV5CHtjAZTKCA; path=/; expires=Tue, 10-Sep-24 18:02:26 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c112845ba40397d-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: how can i use this application
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: how can i use this application\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B35F0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC885C5ED0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884F4920>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:32:50 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7efxf84f76tme645ckapqjb'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=qhOFiwgWW68td1213mw5ENrZHcSuyX_fOKjc3iSg8Xc-1725989570-1.0.1.1-PXey8CVpkXJxva0FxlBBB6Ch5gZEZqZEvj.LDNg9Dm6PZ9dkCcFiKnutQsmJbxH8DZqs86hIDWAy5pmlaXA2qg; path=/; expires=Tue, 10-Sep-24 18:02:50 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1128cd998a7f80-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:32:50 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7efxf84f76tme645ckapqjb', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=qhOFiwgWW68td1213mw5ENrZHcSuyX_fOKjc3iSg8Xc-1725989570-1.0.1.1-PXey8CVpkXJxva0FxlBBB6Ch5gZEZqZEvj.LDNg9Dm6PZ9dkCcFiKnutQsmJbxH8DZqs86hIDWAy5pmlaXA2qg; path=/; expires=Tue, 10-Sep-24 18:02:50 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1128cd998a7f80-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: how can i use this application
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short only the remedy for the given query - how can i use this application  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88456BD0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC885C42D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88456DE0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:32:51 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29968'), (b'x-ratelimit-reset-requests', b'8.499999999s'), (b'x-ratelimit-reset-tokens', b'64ms'), (b'x-request-id', b'req_01j7efxjnffvsscadgejng5em1'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=jyhV85VQQ1A.KZnenU1HBD5rGdKs.Te3bqyerK2fOBA-1725989571-1.0.1.1-663kOrPrI8ycsPFykxkl0Z7t.MAaYx5ihP.eYiV2qxSynCqFe_gtk6VX9PAcGbOElGQ7U_2HmLLZ9R8iq8wWvQ; path=/; expires=Tue, 10-Sep-24 18:02:51 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1128e37e09a8f6-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:32:51 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29968', 'x-ratelimit-reset-requests': '8.499999999s', 'x-ratelimit-reset-tokens': '64ms', 'x-request-id': 'req_01j7efxjnffvsscadgejng5em1', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=jyhV85VQQ1A.KZnenU1HBD5rGdKs.Te3bqyerK2fOBA-1725989571-1.0.1.1-663kOrPrI8ycsPFykxkl0Z7t.MAaYx5ihP.eYiV2qxSynCqFe_gtk6VX9PAcGbOElGQ7U_2HmLLZ9R8iq8wWvQ; path=/; expires=Tue, 10-Sep-24 18:02:51 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1128e37e09a8f6-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Not Found: /users/profile/
+Not Found: /users/profile/
+Received voice navigation query: got fireburns from a fire accident
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: got fireburns from a fire accident\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B3530>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC884AE550> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B1760>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:39:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29752'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'496ms'), (b'x-request-id', b'req_01j7eg9be6fafsatcj7xpm101r'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=fyemf7o5lz_5M32Op7GlQn8oKLXO6RYYOgz.t_XarmY-1725989957-1.0.1.1-ZHqWFtViDvr7U4xWlW3BVXyP7rldFgdcQT7cKWFt9nG_ILtwstlnqsfXh9QLw9IPuf7oyoXL_2GYGesIPbnspQ; path=/; expires=Tue, 10-Sep-24 18:09:17 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c11324ec856b2a6-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:39:17 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29752', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '496ms', 'x-request-id': 'req_01j7eg9be6fafsatcj7xpm101r', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=fyemf7o5lz_5M32Op7GlQn8oKLXO6RYYOgz.t_XarmY-1725989957-1.0.1.1-ZHqWFtViDvr7U4xWlW3BVXyP7rldFgdcQT7cKWFt9nG_ILtwstlnqsfXh9QLw9IPuf7oyoXL_2GYGesIPbnspQ; path=/; expires=Tue, 10-Sep-24 18:09:17 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c11324ec856b2a6-MAA', 'content-encoding': 'gzip'})
+Query categorized under: mediscanner
+Received voice navigation query: suffering from dperession
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: suffering from dperession\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88575E20>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC884AF350> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88576810>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:40:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29754'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'492ms'), (b'x-request-id', b'req_01j7egb2ekf45sf6emxqtpwt50'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3jxT1rYJkVKAKa7bXel8d6QKsXg3vh_ehWqJu8bouqo-1725990013-1.0.1.1-lildkHhtXoZnVTQ7SB19KXOvMeoqFWo0BEsejaJJ9ddAM7R9fKzfcs.z6p6ZC9QtwsOiZIFAj.skBALcdW6VCw; path=/; expires=Tue, 10-Sep-24 18:10:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1133ae1cf8a92b-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:40:13 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29754', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '492ms', 'x-request-id': 'req_01j7egb2ekf45sf6emxqtpwt50', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=3jxT1rYJkVKAKa7bXel8d6QKsXg3vh_ehWqJu8bouqo-1725990013-1.0.1.1-lildkHhtXoZnVTQ7SB19KXOvMeoqFWo0BEsejaJJ9ddAM7R9fKzfcs.z6p6ZC9QtwsOiZIFAj.skBALcdW6VCw; path=/; expires=Tue, 10-Sep-24 18:10:13 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1133ae1cf8a92b-MAA', 'content-encoding': 'gzip'})
+Query categorized under: medibot
+Loading groq api key
+Generating text response for input: suffering from dperession
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': 'Give in short only the remedy for the given query - suffering from dperession  !!Avoid escape characters'}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88574500>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC884AE3D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88577800>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:40:14 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14398'), (b'x-ratelimit-remaining-tokens', b'29969'), (b'x-ratelimit-reset-requests', b'10.99s'), (b'x-ratelimit-reset-tokens', b'62ms'), (b'x-request-id', b'req_01j7egb3e5ex0trn7eb4pr3a82'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=ZMMqmf.52qL1p6A43SDswFL.bWaccwIrGvsaoswj8ic-1725990014-1.0.1.1-f51DuzGQZA.N7qL7WjSuUWl.ForE3NTFFK8v.n3PvPAr8shwOxdOLKZoppD1nw2GAu_makgQgFXE1RJK3RxDpQ; path=/; expires=Tue, 10-Sep-24 18:10:14 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1133b529d57ea6-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:40:14 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14398', 'x-ratelimit-remaining-tokens': '29969', 'x-ratelimit-reset-requests': '10.99s', 'x-ratelimit-reset-tokens': '62ms', 'x-request-id': 'req_01j7egb3e5ex0trn7eb4pr3a82', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=ZMMqmf.52qL1p6A43SDswFL.bWaccwIrGvsaoswj8ic-1725990014-1.0.1.1-f51DuzGQZA.N7qL7WjSuUWl.ForE3NTFFK8v.n3PvPAr8shwOxdOLKZoppD1nw2GAu_makgQgFXE1RJK3RxDpQ; path=/; expires=Tue, 10-Sep-24 18:10:14 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1133b529d57ea6-MAA', 'content-encoding': 'gzip'})
+Text Generated Successfully
+Received voice navigation query: change my location
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: change my location\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885D2F60>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC87EF9050> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885757C0>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+close.started
+close.complete
+close.started
+close.complete
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:41:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29756'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'488ms'), (b'x-request-id', b'req_01j7ege8rpfeb9vtsnfv0faax4'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=nGWow007KLGFZr8_ceomjp1rGLh63SkzDhBq6bFCl6w-1725990119-1.0.1.1-eUXryyeKKuMU1oPQPJhP5vlSdhFH7y.CEcas2K4muxghwFtOvxsdCPmTqctyx7hxQ9U6d7sEb_lNo0LrsiyFqA; path=/; expires=Tue, 10-Sep-24 18:11:59 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c11363daf167f0c-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:41:59 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29756', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '488ms', 'x-request-id': 'req_01j7ege8rpfeb9vtsnfv0faax4', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=nGWow007KLGFZr8_ceomjp1rGLh63SkzDhBq6bFCl6w-1725990119-1.0.1.1-eUXryyeKKuMU1oPQPJhP5vlSdhFH7y.CEcas2K4muxghwFtOvxsdCPmTqctyx7hxQ9U6d7sEb_lNo0LrsiyFqA; path=/; expires=Tue, 10-Sep-24 18:11:59 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c11363daf167f0c-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: add my medical data
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: add my medical data\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885749E0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC87E17F50> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88574470>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:42:24 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29756'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'488ms'), (b'x-request-id', b'req_01j7egf2fqfecv52060wzfc8qj'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=BRcI_wUMm8TAamMVrPGl8AoY5xUTqou0p5fO8_hJVq0-1725990144-1.0.1.1-wdyHG7YcjH0Cc3CcNheMCppR1ABN5qzonpvg1e3wr0BWtkw7lErNv.XBZvtkQOiOY3o3ijaAakzOyrWTZCpbcg; path=/; expires=Tue, 10-Sep-24 18:12:24 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1136e25bf2a908-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:42:24 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29756', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '488ms', 'x-request-id': 'req_01j7egf2fqfecv52060wzfc8qj', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=BRcI_wUMm8TAamMVrPGl8AoY5xUTqou0p5fO8_hJVq0-1725990144-1.0.1.1-wdyHG7YcjH0Cc3CcNheMCppR1ABN5qzonpvg1e3wr0BWtkw7lErNv.XBZvtkQOiOY3o3ijaAakzOyrWTZCpbcg; path=/; expires=Tue, 10-Sep-24 18:12:24 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1136e25bf2a908-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: add my medical prescriptions
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: add my medical prescriptions\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88574710>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC8852D8D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC88574290>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:42:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7egfbn4fexahhd88kwhgbee'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3uswmEpvnysh5a8dUAvOUTJoobBWL71qX0PYhDWqN28-1725990154-1.0.1.1-0Lpv2Cf4yML_Y.9npRRZVVJ1zSROH88q6A_Dkq4CU81ZB0Gs6.WGCoDFuJgJwHEuhHtDUhBriFM31ko.yt5WXg; path=/; expires=Tue, 10-Sep-24 18:12:34 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c11371d0ad27f10-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:42:34 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7egfbn4fexahhd88kwhgbee', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=3uswmEpvnysh5a8dUAvOUTJoobBWL71qX0PYhDWqN28-1725990154-1.0.1.1-0Lpv2Cf4yML_Y.9npRRZVVJ1zSROH88q6A_Dkq4CU81ZB0Gs6.WGCoDFuJgJwHEuhHtDUhBriFM31ko.yt5WXg; path=/; expires=Tue, 10-Sep-24 18:12:34 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c11371d0ad27f10-MAA', 'content-encoding': 'gzip'})
+Query categorized under: upload_prescription
+close.started
+close.complete
+Received voice navigation query: check Mr.Aadhavan
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check Mr.Aadhavan\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC8849CFE0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC8852F4D0> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC885D3470>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:43:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29756'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'488ms'), (b'x-request-id', b'req_01j7egg1rpet19tgjhvz66c953'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=iUw_uFNAQ7OFytLUXwiOEleFnPVaSWQteBqYjoM9kzI-1725990180-1.0.1.1-Lr6Xm_pqDs0rnl7L0TIMo7KawBHYlSgkXvBb3vmA4f0cH0hOXptH09RgZBAIOuoC4WSz7DqU9xuVsTBCCI1f1Q; path=/; expires=Tue, 10-Sep-24 18:13:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1137aa898b7ec7-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:43:00 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29756', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '488ms', 'x-request-id': 'req_01j7egg1rpet19tgjhvz66c953', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=iUw_uFNAQ7OFytLUXwiOEleFnPVaSWQteBqYjoM9kzI-1725990180-1.0.1.1-Lr6Xm_pqDs0rnl7L0TIMo7KawBHYlSgkXvBb3vmA4f0cH0hOXptH09RgZBAIOuoC4WSz7DqU9xuVsTBCCI1f1Q; path=/; expires=Tue, 10-Sep-24 18:13:00 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1137aa898b7ec7-MAA', 'content-encoding': 'gzip'})
+Query categorized under: user_profile
+Received voice navigation query: check Mr.Aadhavan pediatrician
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check Mr.Aadhavan pediatrician\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B38F0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001DC885C4350> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001DC884B2720>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Tue, 10 Sep 2024 17:43:11 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7eggdjnfntt45d9jpf37038'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=UhngA.t7JLZ36YtGG5mb09PFOSxMBXwVV371gZ6G5Yc-1725990191-1.0.1.1-qO9r147ao9gXmRRJn0_Sh5MmWbiss0WyVzdwmCZhpGASgRSvQ.Xg8BmY3cXIirp.Vo_p54rrnFMxfk4pGGPG2Q; path=/; expires=Tue, 10-Sep-24 18:13:11 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1137f61be99147-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Tue, 10 Sep 2024 17:43:11 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7eggdjnfntt45d9jpf37038', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=UhngA.t7JLZ36YtGG5mb09PFOSxMBXwVV371gZ6G5Yc-1725990191-1.0.1.1-qO9r147ao9gXmRRJn0_Sh5MmWbiss0WyVzdwmCZhpGASgRSvQ.Xg8BmY3cXIirp.Vo_p54rrnFMxfk4pGGPG2Q; path=/; expires=Tue, 10-Sep-24 18:13:11 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1137f61be99147-MAA', 'content-encoding': 'gzip'})
+Query categorized under: book_appointment
+Method Not Allowed: /api/classify/v1/check-navigation/
+Not Found: /admin/api/classify/v1/check-navigation/
+close.started
+close.complete
+close.started
+close.complete
+close.started
+close.complete
+Internal Server Error: /admin/auth/user/1/change/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_27316_sync_2" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 2112, in cursor_iter
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 2112, in <lambda>
+    for rows in iter((lambda: cursor.fetchmany(itersize)), sentinel):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: cursor "_django_curs_27316_sync_2" does not exist
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1073, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\template\base.py", line 1050, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\widgets.py", line 278, in render
+    context = self.get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\admin\widgets.py", line 329, in get_context
+    "rendered_widget": self.widget.render(name, value, attrs),
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\widgets.py", line 278, in render
+    context = self.get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\contrib\admin\widgets.py", line 43, in get_context
+    context = super().get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\widgets.py", line 764, in get_context
+    context = super().get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\widgets.py", line 715, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+                                     ^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\widgets.py", line 655, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\forms\models.py", line 1424, in __iter__
+    for obj in queryset:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 518, in _iterator
+    yield from iterable
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 123, in __iter__
+    for row in compiler.results_iter(results):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 2115, in cursor_iter
+    cursor.close()
+psycopg2.errors.InvalidCursorName: cursor "_django_curs_27316_sync_2" does not exist
+
+Watching for file changes with StatReloader
+Received voice navigation query: check Mr.Aadhavan gynocologist
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check Mr.Aadhavan gynocologist\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B959D8ACC0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000002B959A21350> server_hostname='api.groq.com' timeout=5.0
+start_tls.failed exception=ConnectTimeout(TimeoutError('_ssl.c:983: The handshake operation timed out'))
+Encountered httpx.TimeoutException
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_transports\default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_transports\default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_sync\connection.py", line 99, in handle_request
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_sync\connection.py", line 76, in handle_request
+    stream = self._connect(request)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_sync\connection.py", line 154, in _connect
+    stream = stream.start_tls(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_backends\sync.py", line 152, in start_tls
+    with map_exceptions(exc_map):
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectTimeout: _ssl.c:983: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\groq\_base_client.py", line 972, in _request
+    response = self._client.send(
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_client.py", line 926, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_transports\default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "C:\Users\aswat\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\httpx\_transports\default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectTimeout: _ssl.c:983: The handshake operation timed out
+1 retry left
+Retrying request to /openai/v1/chat/completions in 0.944640 seconds
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check Mr.Aadhavan gynocologist\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B959E656D0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000002B959A21350> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002B959E65F70>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 12 Sep 2024 03:46:40 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7j5e6yqfk4vk3m9rrv1btt8'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=fHYA7TO8kOciJbnVbCHsRwPkBcLFeviCYIqAI.sADeU-1726112800-1.0.1.1-pfasooudfob909aT9ySaPzLwCwOpm.nwFUfWhIChHqNjbHfZZlbkSXfuDKMOOAVFPDIqfnYaXFHu2UT2JdOojw; path=/; expires=Thu, 12-Sep-24 04:16:40 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1ce9653bc67f4b-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 12 Sep 2024 03:46:40 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7j5e6yqfk4vk3m9rrv1btt8', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=fHYA7TO8kOciJbnVbCHsRwPkBcLFeviCYIqAI.sADeU-1726112800-1.0.1.1-pfasooudfob909aT9ySaPzLwCwOpm.nwFUfWhIChHqNjbHfZZlbkSXfuDKMOOAVFPDIqfnYaXFHu2UT2JdOojw; path=/; expires=Thu, 12-Sep-24 04:16:40 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1ce9653bc67f4b-MAA', 'content-encoding': 'gzip'})
+Query categorized under: book_appointment
+C:\Users\aswat\Medecro\ror-django-backend\classify\views.py changed, reloading.
+close.started
+close.complete
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\admin.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /users/register/
+Not Found: /favicon.ico
+Not Found: /
+Bad Request: /users/register/
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '172.17.12.83:8000'. You may need to add '172.17.12.83' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.17.12.83:8000'. You may need to add '172.17.12.83' to ALLOWED_HOSTS.
+Bad Request: /api/classify/v1/check-navigation/
+Invalid HTTP_HOST header: '172.17.12.83:8000'. You may need to add '172.17.12.83' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\utils\deprecation.py", line 128, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\middleware\common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\http\request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '172.17.12.83:8000'. You may need to add '172.17.12.83' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/classify/v1/check-navigation/
+Method Not Allowed: /api/classify/v1/check-navigation/
+Not Found: /favicon.ico
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\ror_django_backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /users/patient/register/
+Internal Server Error: /users/patient/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 27, in patient_register
+    if Patient.objects.filter(username=username).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: id, medical_history, name, phonenumber, role
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /users/patient/register/
+Internal Server Error: /api/users/patient/register/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "user_patient" does not exist
+LINE 1: SELECT 1 AS "a" FROM "user_patient" WHERE "user_patient"."us...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 27, in patient_register
+    if Patient.objects.filter(username=username).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "user_patient" does not exist
+LINE 1: SELECT 1 AS "a" FROM "user_patient" WHERE "user_patient"."us...
+                             ^
+
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /api/users/patient/register/
+Internal Server Error: /api/users/register/patient/
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "user_patient" does not exist
+LINE 1: SELECT 1 AS "a" FROM "user_patient" WHERE "user_patient"."ph...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 26, in register_patient
+    if Patient.objects.filter(phonenumber=phonenumber).exists():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "user_patient" does not exist
+LINE 1: SELECT 1 AS "a" FROM "user_patient" WHERE "user_patient"."ph...
+                             ^
+
+Watching for file changes with StatReloader
+Not Found: /api/users/patient/login/
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /api/users/patient/login
+Method Not Allowed: /api/users/patient/register
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Bad Request: /api/users/patient/register
+Bad Request: /api/users/patient/register
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Method Not Allowed: /api/users/doctor/register
+Internal Server Error: /api/users/doctor/register
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "experience_years" of relation "user_doctor" violates not-null constraint
+DETAIL:  Failing row contains (1, , 9876543210, doctor, , null, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\ror-django-backend\user\views.py", line 61, in register_doctor
+    doctor.save()
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\aswat\Medecro\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "experience_years" of relation "user_doctor" violates not-null constraint
+DETAIL:  Failing row contains (1, , 9876543210, doctor, , null, null).
+
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Received voice navigation query: check Mr.Aadhavan gynocologist
+load_ssl_context verify=True cert=None trust_env=True http2=False
+load_verify_locations cafile='C:\\Users\\aswat\\Medecro\\myenv\\Lib\\site-packages\\certifi\\cacert.pem'
+Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': "Classify the following query into one of these categories: 'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\nHere is how you should classify:\n- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\nQuery: check Mr.Aadhavan gynocologist\n\nCategory:\nJust give me a single one-word answer based on the category that best fits the query provided."}], 'model': 'llama3-8b-8192'}}
+Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=5.0 socket_options=None
+connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F4C7F58EF0>
+start_tls.started ssl_context=<ssl.SSLContext object at 0x000001F4C7A47450> server_hostname='api.groq.com' timeout=5.0
+start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001F4C7F5A870>
+send_request_headers.started request=<Request [b'POST']>
+send_request_headers.complete
+send_request_body.started request=<Request [b'POST']>
+send_request_body.complete
+receive_response_headers.started request=<Request [b'POST']>
+receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 12 Sep 2024 12:36:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), (b'vary', b'Origin'), (b'x-ratelimit-limit-requests', b'14400'), (b'x-ratelimit-limit-tokens', b'30000'), (b'x-ratelimit-remaining-requests', b'14399'), (b'x-ratelimit-remaining-tokens', b'29753'), (b'x-ratelimit-reset-requests', b'6s'), (b'x-ratelimit-reset-tokens', b'494ms'), (b'x-request-id', b'req_01j7k3qzm3fqabjv9p7rpgm34b'), (b'via', b'1.1 google'), (b'alt-svc', b'h3=":443"; ma=86400'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=_R7QLGE3ixNOdePDzlPJnl1B1YMr_VCmWhdfnh2lqeg-1726144577-1.0.1.1-rL7LUDEB5knyTtryfjHP46umcD6fuxy2bX77AVBKfU6JqD9VT5CY.PIFVeFypkh1PAMISnGTmEcrBn7gX4Zh3A; path=/; expires=Thu, 12-Sep-24 13:06:17 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8c1ff1366b4c7f9b-MAA'), (b'Content-Encoding', b'gzip')])
+HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+receive_response_body.started request=<Request [b'POST']>
+receive_response_body.complete
+response_closed.started
+response_closed.complete
+HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" Headers({'date': 'Thu, 12 Sep 2024 12:36:17 GMT', 'content-type': 'application/json', 'transfer-encoding': 'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 'vary': 'Origin', 'x-ratelimit-limit-requests': '14400', 'x-ratelimit-limit-tokens': '30000', 'x-ratelimit-remaining-requests': '14399', 'x-ratelimit-remaining-tokens': '29753', 'x-ratelimit-reset-requests': '6s', 'x-ratelimit-reset-tokens': '494ms', 'x-request-id': 'req_01j7k3qzm3fqabjv9p7rpgm34b', 'via': '1.1 google', 'alt-svc': 'h3=":443"; ma=86400', 'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=_R7QLGE3ixNOdePDzlPJnl1B1YMr_VCmWhdfnh2lqeg-1726144577-1.0.1.1-rL7LUDEB5knyTtryfjHP46umcD6fuxy2bX77AVBKfU6JqD9VT5CY.PIFVeFypkh1PAMISnGTmEcrBn7gX4Zh3A; path=/; expires=Thu, 12-Sep-24 13:06:17 GMT; domain=.groq.com; HttpOnly; Secure; SameSite=None', 'server': 'cloudflare', 'cf-ray': '8c1ff1366b4c7f9b-MAA', 'content-encoding': 'gzip'})
+Query categorized under: book_appointment
+close.started
+close.complete
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\aswat\Medecro\ror-django-backend\user\models.py changed, reloading.
+Watching for file changes with StatReloader
