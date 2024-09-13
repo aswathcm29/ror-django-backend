@@ -6,12 +6,13 @@ class AbstractUser(models.Model):
     name = models.CharField(max_length=100)
     phonenumber = models.CharField(max_length=20, unique=True)
     role = models.CharField(max_length=20, default='Patient', choices=[('doctor', 'Doctor'), ('patient', 'Patient')])
+    
 
     class Meta:
         abstract = True
 
     def __str__(self):
-        return self.name
+        return self.phonenumber
 
 
 SPECIALIZATION_CHOICES = [
@@ -58,8 +59,8 @@ class Doctor(AbstractUser):
     latitude = models.FloatField(blank=True, null=True) 
     longitude = models.FloatField(blank=True, null=True) 
 
-    # def str(self):
-    #     return self.phonenumber
+    def str(self):
+        return self.phonenumber
 
 
 class Patient(AbstractUser):
@@ -71,7 +72,7 @@ class Patient(AbstractUser):
     bloodgroup = models.CharField(max_length=10,default='')  
     latitude = models.FloatField(blank=True, null=True)  
     longitude = models.FloatField(blank=True, null=True)  
-    location_name = models.CharField(max_length=255, blank=True, null=True)
+    location_name = models.CharField(max_length=256, blank=True, null=True)
 
-    # def str(self):
-    #     return self.phonenumber
+    def str(self):
+        return self.phonenumber
