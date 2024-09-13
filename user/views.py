@@ -5,11 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from django.conf import settings
 from .models import Doctor, Patient
-from django.contrib.gis.geos import Point
-from django.contrib.gis.measure import D
-
-
-
+from . import doctor
 from geopy.geocoders import Nominatim
 
 
@@ -236,3 +232,21 @@ def find_nearby_doctors(request):
     ]
 
     return Response({'doctors': doctors_list}, status=200)
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def get_available_doctors(request):
+    specialization = request.query_params.get('specialization', None)
+    location_name = request.query_params.get('location_name', None)
+    doctors = doctor.doctor_data(specialization=specialization, location_name=location_name)
+    data = []
+    for doc in doctors:
+        data.append({
+            'name': doc.name,
+            'specialization': doc.specialization,
+            'experience_years': doc.experience_years,
+            'location_name': doc.location_name,
+            'latitude': doc.latitude,
+            'longitude': doc.longitude
+        })
+    return Response(data, status=200)

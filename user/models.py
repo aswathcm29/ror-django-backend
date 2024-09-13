@@ -11,8 +11,9 @@ class AbstractUser(models.Model):
     class Meta:
         abstract = True
 
-    def str(self):
-        return self.phonenumber
+    def __str__(self):
+        return self.name
+
 
 SPECIALIZATION_CHOICES = [
     ("allergy_immunology", "Allergy and Immunology"),
@@ -58,6 +59,8 @@ class Doctor(AbstractUser):
     latitude = models.FloatField(blank=True, null=True) 
     longitude = models.FloatField(blank=True, null=True) 
 
+    # def str(self):
+    #     return self.phonenumber
 
 
 class Patient(AbstractUser):
@@ -70,3 +73,6 @@ class Patient(AbstractUser):
     latitude = models.FloatField(blank=True, null=True)  
     longitude = models.FloatField(blank=True, null=True)  
     location_name = models.CharField(max_length=255, blank=True, null=True)
+
+    # def str(self):
+    #     return self.phonenumber
