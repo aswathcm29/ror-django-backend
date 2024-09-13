@@ -53,12 +53,13 @@ def process_voice_input(request):
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
-def text_voice_generator(request):
+def medical_chatbot(request):
     """
     API View to generate text and voice response from the given text.
     """
     text = request.data.get('text')
     lang = request.data.get('lang')
+    id = request.query_params.get('id')
 
     if not text:
         return Response({'error': 'No text provided'}, status=status.HTTP_400_BAD_REQUEST)
