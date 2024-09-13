@@ -5,6 +5,10 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from django.conf import settings
 from .models import Doctor, Patient
+from django.contrib.gis.geos import Point
+from django.contrib.gis.measure import D
+
+
 
 from geopy.geocoders import Nominatim
 
@@ -16,7 +20,7 @@ def get_location_from_coordinates(latitude, longitude):
         return location.address
     except Exception as e:
         return None
-
+    
 def generate_token(user):
     payload = {
         'phonenumber': user.phonenumber,
@@ -60,6 +64,7 @@ def login_doctor(request):
 
     token = generate_token(doctor)
     return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=200)
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -177,9 +182,6 @@ def update_profile(request):
         try:
             if latitude.strip() == '':
                 raise ValueError("Empty string provided for latitude")
-            
-            # latitude_float = float(latitude) if latitude else None
-            # longitude_float = float(longitude) if longitude else None
 
             user.latitude = latitude
             user.longitude = longitude
@@ -197,3 +199,40 @@ def update_profile(request):
     user.save()
 
     return Response({'message': f'{role.capitalize()} profile updated successfully'}, status=200)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def find_nearby_doctors(request):
+    phonenumber = request.query_params.get('phonenumber')
+    
+    if not phonenumber:
+        return Response({'error': 'Phone number is required'}, status=400)
+
+    try:
+        patient = Patient.objects.get(phonenumber=phonenumber)
+    except Patient.DoesNotExist:
+        return Response({'error': 'Patient not found with the provided phone number.'}, status=404)
+    
+    if patient.latitude is None or patient.longitude is None:
+        return Response({'error': 'Patient coordinates are not available.'}, status=404)
+
+    patient_location = Point(patient.longitude, patient.latitude, srid=4326)
+    
+    nearby_doctors = Doctor.objects.filter(
+        location__distance_lt=(patient_location, D(km=15))
+    )
+    
+    doctors_list = [
+        {
+            'name': doctor.name,
+            'phonenumber': doctor.phonenumber,
+            'specialization': doctor.specialization,
+            'experience_years': doctor.experience_years,
+            'location_name': doctor.location_name,
+            'distance': doctor.location.distance(patient_location)  # distance in meters
+        }
+        for doctor in nearby_doctors
+    ]
+
+    return Response({'doctors': doctors_list}, status=200)

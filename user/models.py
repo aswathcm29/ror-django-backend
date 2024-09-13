@@ -6,6 +6,7 @@ class AbstractUser(models.Model):
     name = models.CharField(max_length=100)
     phonenumber = models.CharField(max_length=20, unique=True)
     role = models.CharField(max_length=20, default='Patient', choices=[('doctor', 'Doctor'), ('patient', 'Patient')])
+    
 
     class Meta:
         abstract = True
