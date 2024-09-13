@@ -11,6 +11,16 @@ from . import utils
 from geopy.geocoders import Nominatim
 
 
+
+def get_location_from_coordinates(latitude, longitude):
+    geolocator = Nominatim(user_agent="geoapiExercises")
+    try:
+        location = geolocator.reverse(f"{latitude}, {longitude}", language='en')
+        return location.address
+    except Exception as e:
+        return None
+    
+
 def generate_token(user):
     payload = {
         'id': user.phonenumber,
@@ -55,6 +65,7 @@ def login_doctor(request):
     token = generate_token(doctor)
     return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=200)
 
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_patient(request):
@@ -68,25 +79,16 @@ def register_patient(request):
     if Patient.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
 
-    latitude_float = None
-    longitude_float = None
+
     location_name = None
 
-    try:
-        if latitude:
-            latitude_float = float(latitude)
-        if longitude:
-            longitude_float = float(longitude)
-    except ValueError:
-        return Response({'error': 'Latitude and Longitude must be valid numbers.'}, status=400)
-
-    if latitude_float is not None and longitude_float is not None:
-        location_name = get_location_from_coordinates(latitude_float, longitude_float)
+    if latitude is not None and longitude is not None:
+        location_name = get_location_from_coordinates(latitude, longitude)
 
     patient = Patient(
         phonenumber=phonenumber,
-        latitude=latitude_float,
-        longitude=longitude_float,
+        latitude=latitude,
+        longitude=longitude,
         location_name=location_name,
         role='patient'
     )
@@ -108,25 +110,14 @@ def register_doctor(request):
     if Doctor.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
 
-    latitude_float = None
-    longitude_float = None
-    location_name = None
 
-    try:
-        if latitude:
-            latitude_float = float(latitude)
-        if longitude:
-            longitude_float = float(longitude)
-    except ValueError:
-        return Response({'error': 'Latitude and Longitude must be valid numbers.'}, status=400)
-
-    if latitude_float is not None and longitude_float is not None:
-        location_name = get_location_from_coordinates(latitude_float, longitude_float)
+    if latitude is not None and longitude is not None:
+        location_name = get_location_from_coordinates(latitude, longitude)
 
     doctor = Doctor(
         phonenumber=phonenumber,
-        latitude=latitude_float,
-        longitude=longitude_float,
+        latitude=latitude,
+        longitude=longitude,
         location_name=location_name,
         role='doctor'
     )
@@ -149,6 +140,8 @@ def update_profile(request):
         return JsonResponse({'error':result}, status=400)
     
     return JsonResponse({'message': f'{user_role.capitalize()} profile updated successfully'}, status=200)
+
+
 
 
 @api_view(['GET'])
