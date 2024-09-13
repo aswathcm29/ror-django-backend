@@ -3,23 +3,17 @@ import datetime
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
+from django.http import JsonResponse    
 from django.conf import settings
 from .models import Doctor, Patient
 from . import doctor
+from . import utils
 from geopy.geocoders import Nominatim
 
 
-def get_location_from_coordinates(latitude, longitude):
-    geolocator = Nominatim(user_agent="geoapiExercises")
-    try:
-        location = geolocator.reverse(f"{latitude}, {longitude}", language='en')
-        return location.address
-    except Exception as e:
-        return None
-
 def generate_token(user):
     payload = {
-        'phonenumber': user.phonenumber,
+        'id': user.phonenumber,
         'exp': datetime.datetime.utcnow() + datetime.timedelta(days=1)
     }
     return jwt.encode(payload, settings.SECRET_KEY, algorithm='HS256')
@@ -40,7 +34,7 @@ def login_patient(request):
         return Response({'error': 'Invalid phone number'}, status=400)
 
     token = generate_token(patient)
-    return Response({'phonenumber': patient.phonenumber, 'token': token}, status=200)
+    return JsonResponse({'phonenumber': patient.phonenumber, 'token': token}, status=200)
 
 
 
@@ -144,60 +138,17 @@ def register_doctor(request):
 @api_view(['PATCH'])
 @permission_classes([AllowAny])
 def update_profile(request):
-    phone_number = request.data.get('phonenumber')
-    latitude = request.data.get('latitude')  
-    longitude = request.data.get('longitude') 
-    print(type(latitude), type(longitude))
+    phone_number = request.query_params.get('id')
+    user_role = request.query_params.get('user_role')
     if not phone_number:
         return Response({'error': 'Phone number is required'}, status=400)
+    
+    result = utils.modify_profile(request, phone_number, user_role)
 
-    try:
-        try:    
-            user = Doctor.objects.get(phonenumber=phone_number)
-        except Doctor.DoesNotExist:
-            user = Patient.objects.get(phonenumber=phone_number)
-    except (Doctor.DoesNotExist, Patient.DoesNotExist):
-        return Response({'error': 'User not found with the provided phone number.'}, status=404)
-
-    role = user.role
-
-    fields_to_update = {
-        'doctor': ['name', 'phonenumber', 'specialization', 'experience_years', 'location_name'],
-        'patient': ['name', 'phonenumber', 'medical_history', 'age', 'height', 'weight', 'gender', 'bloodgroup', 'location_name']
-    }
-
-    if role not in fields_to_update:
-        return Response({'error': 'Invalid role'}, status=400)
-
-    for field in fields_to_update[role]:
-        if field in request.data and request.data.get(field) is not None:
-            setattr(user, field, request.data.get(field))
-
-    if latitude or longitude:
-        try:
-            if latitude.strip() == '':
-                raise ValueError("Empty string provided for latitude")
-            
-            # latitude_float = float(latitude) if latitude else None
-            # longitude_float = float(longitude) if longitude else None
-
-            user.latitude = latitude
-            user.longitude = longitude
-
-            if latitude is not None and latitude is not None:
-                address = get_location_from_coordinates(latitude, longitude)
-                if address:
-                    user.location_name = address
-                else:
-                    return Response({'error': 'Unable to fetch location from coordinates.'}, status=400)
-
-        except ValueError:
-            return Response({'error': 'Latitude and Longitude must be valid numbers.'}, status=400)
-
-    user.save()
-
-    return Response({'message': f'{role.capitalize()} profile updated successfully'}, status=200)
-
+    if 'Error' in result :
+        return JsonResponse({'error':result}, status=400)
+    
+    return JsonResponse({'message': f'{user_role.capitalize()} profile updated successfully'}, status=200)
 
 
 @api_view(['GET'])
@@ -215,5 +166,25 @@ def get_available_doctors(request):
             'location_name': doc.location_name,
             'latitude': doc.latitude,
             'longitude': doc.longitude
-        })
+    })
     return Response(data, status=200)
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+# View function to handle profile retrieval
+def view_profile(request):
+    phone_number = request.query_params.get('id')
+    user_role = request.query_params.get('role')
+
+    if not phone_number or not user_role:
+        return JsonResponse({'error': 'Phone number and role are required'}, status=400)
+    
+    profile = utils.get_user_profile(phone_number, user_role)
+
+    if profile:
+        # Convert profile to dictionary and return as JSON response
+        return JsonResponse({'message': 'User found', 'profile': utils.profile_to_dict(profile, user_role)}, status=200)
+    else:
+        return JsonResponse({'message': 'User not found'}, status=404)
+    

@@ -11,3 +11,5 @@ def doctor_data(specialization = None, location_name = None):
     if location_name:
         doctors = doctors.filter(location_name = location_name)
     return doctors
+
+

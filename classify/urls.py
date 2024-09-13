@@ -4,7 +4,7 @@ from . import views
 
 urlpatterns = [
     path('v1/process-voice/', views.process_voice_input, name='process_voice'),
-    path('v1/text-voice-generator/', views.text_voice_generator, name='text_voice_generator'),
+    path('v1/medical-chatbot/', views.medical_chatbot, name='medical-chatbot'),
     path('v1/check-navigation/',views.voice_navigation,name='check-navigation')
 ]
 
