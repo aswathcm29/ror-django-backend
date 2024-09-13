@@ -75,25 +75,16 @@ def register_patient(request):
     if Patient.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
 
-    latitude_float = None
-    longitude_float = None
+
     location_name = None
 
-    try:
-        if latitude:
-            latitude_float = float(latitude)
-        if longitude:
-            longitude_float = float(longitude)
-    except ValueError:
-        return Response({'error': 'Latitude and Longitude must be valid numbers.'}, status=400)
-
-    if latitude_float is not None and longitude_float is not None:
-        location_name = get_location_from_coordinates(latitude_float, longitude_float)
+    if latitude is not None and longitude is not None:
+        location_name = get_location_from_coordinates(latitude, longitude)
 
     patient = Patient(
         phonenumber=phonenumber,
-        latitude=latitude_float,
-        longitude=longitude_float,
+        latitude=latitude,
+        longitude=longitude,
         location_name=location_name,
         role='patient'
     )
@@ -115,25 +106,14 @@ def register_doctor(request):
     if Doctor.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
 
-    latitude_float = None
-    longitude_float = None
-    location_name = None
 
-    try:
-        if latitude:
-            latitude_float = float(latitude)
-        if longitude:
-            longitude_float = float(longitude)
-    except ValueError:
-        return Response({'error': 'Latitude and Longitude must be valid numbers.'}, status=400)
-
-    if latitude_float is not None and longitude_float is not None:
-        location_name = get_location_from_coordinates(latitude_float, longitude_float)
+    if latitude is not None and longitude is not None:
+        location_name = get_location_from_coordinates(latitude, longitude)
 
     doctor = Doctor(
         phonenumber=phonenumber,
-        latitude=latitude_float,
-        longitude=longitude_float,
+        latitude=latitude,
+        longitude=longitude,
         location_name=location_name,
         role='doctor'
     )
@@ -197,41 +177,7 @@ def update_profile(request):
     return Response({'message': f'{role.capitalize()} profile updated successfully'}, status=200)
 
 
-@api_view(['GET'])
-@permission_classes([AllowAny])
-def find_nearby_doctors(request):
-    phonenumber = request.query_params.get('phonenumber')
-    
-    if not phonenumber:
-        return Response({'error': 'Phone number is required'}, status=400)
 
-    try:
-        patient = Patient.objects.get(phonenumber=phonenumber)
-    except Patient.DoesNotExist:
-        return Response({'error': 'Patient not found with the provided phone number.'}, status=404)
-    
-    if patient.latitude is None or patient.longitude is None:
-        return Response({'error': 'Patient coordinates are not available.'}, status=404)
-
-    patient_location = Point(patient.longitude, patient.latitude, srid=4326)
-    
-    nearby_doctors = Doctor.objects.filter(
-        location__distance_lt=(patient_location, D(km=15))
-    )
-    
-    doctors_list = [
-        {
-            'name': doctor.name,
-            'phonenumber': doctor.phonenumber,
-            'specialization': doctor.specialization,
-            'experience_years': doctor.experience_years,
-            'location_name': doctor.location_name,
-            'distance': doctor.location.distance(patient_location)  # distance in meters
-        }
-        for doctor in nearby_doctors
-    ]
-
-    return Response({'doctors': doctors_list}, status=200)
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
