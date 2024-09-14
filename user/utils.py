@@ -15,6 +15,8 @@ def get_location_from_coordinates(latitude, longitude):
 def modify_profile(request, phone_number, role):
     latitude = request.data.get('latitude')
     longitude = request.data.get('longitude')
+    print(latitude,type(longitude))
+
     user = get_user_profile(phone_number, role)
     fields_to_update = {
         'doctor': ['name', 'phonenumber', 'specialization', 'experience_years', 'location_name','bio'],
@@ -32,12 +34,14 @@ def modify_profile(request, phone_number, role):
         try:
             if latitude.strip() == '':
                 raise ValueError("Empty string provided for latitude")
+            
+            print(latitude,type(longitude))
 
             user.latitude = latitude
             user.longitude = longitude
 
             if latitude is not None and latitude is not None:
-                address = get_location_from_coordinates(latitude, longitude)
+                address = get_location_from_coordinates(user.latitude, user.longitude)
                 if address:
                     user.location_name = address
                 else:
@@ -60,9 +64,9 @@ def get_user_profile(phone_number, user_role):
         else:
             return {'error': 'Invalid user role'}
         
-        return profile  # Return the profile object if found
+        return profile  
     except (Doctor.DoesNotExist, Patient.DoesNotExist):
-        return None  # Return None if the user is not found
+        return None 
 
     
 def profile_to_dict(profile, user_role):
@@ -77,6 +81,7 @@ def profile_to_dict(profile, user_role):
             'longitude': profile.longitude,
             'bio': profile.bio,
         }
+
     elif user_role == 'patient':
         return {
         'name': profile.name,

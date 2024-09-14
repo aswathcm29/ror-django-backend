@@ -66,6 +66,7 @@ def login_doctor(request):
     return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=200)
 
 
+
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_patient(request):
@@ -78,7 +79,6 @@ def register_patient(request):
 
     if Patient.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
-
 
     location_name = None
 
@@ -96,6 +96,7 @@ def register_patient(request):
 
     token = generate_token(patient)
     return Response({'phonenumber': patient.phonenumber, 'token': token}, status=201)
+
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -125,6 +126,7 @@ def register_doctor(request):
 
     token = generate_token(doctor)
     return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=201)
+
 
 @api_view(['PATCH'])
 @permission_classes([AllowAny])
