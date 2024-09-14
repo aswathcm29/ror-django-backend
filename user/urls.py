@@ -9,4 +9,5 @@ urlpatterns = [
     path('update-profile/', views.update_profile, name='update_profile'),
     path('get-doctors',views.get_available_doctors,name='get_available_doctors'),
     path('view-profile/',views.view_profile,name='view_profile'),
+    path('doctors/nearest/', views.find_nearest_doctors, name='find_nearest_doctors'),  
 ]
