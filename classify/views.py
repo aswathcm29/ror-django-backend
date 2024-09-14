@@ -4,9 +4,10 @@ from rest_framework.permissions import AllowAny
 from rest_framework.parsers import MultiPartParser, FormParser, JSONParser
 from rest_framework import status
 from django.http import JsonResponse
-from .utils import process_audio, generate_text_response, classify_page
-import logging
+from .utils import process_audio, generate_text_response, classify_page,classify_specialization
+import logging 
 import os
+from user.models import Doctor
 
 logger = logging.getLogger(__name__)
 
@@ -51,35 +52,35 @@ def process_voice_input(request):
             status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE
         )
 
-@api_view(['POST'])
-@permission_classes([AllowAny])
-def medical_chatbot(request):
-    """
-    API View to generate text and voice response from the given text.
-    """
-    text = request.data.get('text')
-    lang = request.data.get('lang')
-    id = request.query_params.get('id')
+# @api_view(['POST'])
+# @permission_classes([AllowAny])
+# def medical_chatbot(request):
+#     """
+#     API View to generate text and voice response from the given text.
+#     """
+#     text = request.data.get('text')
+#     lang = request.data.get('lang')
+#     id = request.query_params.get('id')
 
-    if not text:
-        return Response({'error': 'No text provided'}, status=status.HTTP_400_BAD_REQUEST)
-    if not lang:
-        return Response({'error': 'No language provided'}, status=status.HTTP_400_BAD_REQUEST)
+#     if not text:
+#         return Response({'error': 'No text provided'}, status=status.HTTP_400_BAD_REQUEST)
+#     if not lang:
+#         return Response({'error': 'No language provided'}, status=status.HTTP_400_BAD_REQUEST)
 
-    try:
-        text_response = generate_text_response(text, lang)
-        if text_response.startswith("Error"):
-            return Response({'error': text_response}, status=status.HTTP_400_BAD_REQUEST)
+#     try:
+#         text_response = generate_text_response(text, lang)
+#         if text_response.startswith("Error"):
+#             return Response({'error': text_response}, status=status.HTTP_400_BAD_REQUEST)
 
-        response_data = {
-            'text_response': text_response,
-            'voice_response': "working on it",
-        }   
+#         response_data = {
+#             'text_response': text_response,
+#             'voice_response': "working on it",
+#         }   
             
-        return JsonResponse(response_data)
-    except Exception as e:
-        logger.error("Error generating text and voice response", exc_info=True)
-        return Response({'error': 'Error generating text and voice response'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+#         return JsonResponse(response_data)
+#     except Exception as e:
+#         logger.error("Error generating text and voice response", exc_info=True)
+#         return Response({'error': 'Error generating text and voice response'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 @api_view(['POST'])
 @permission_classes([AllowAny])
@@ -112,3 +113,51 @@ def voice_navigation(request):
             return Response({'error': 'Error generating detailed response'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     return Response(response_data)
+
+
+@api_view(['POST'])
+@permission_classes([AllowAny])
+def medical_chatbot(request):
+    input_text = request.data.get('text')
+    lang = request.data.get('lang', 'en')
+    print(input_text)
+    if not input_text:
+        return JsonResponse({"error": "Query is required"}, status=400)
+
+    try:
+        logging.info(f"Classifying specialization for input: {input_text}")
+        specialization = classify_specialization(input_text)
+        print(specialization)
+        logging.info(f"Classified specialization: {specialization}")
+
+    except Exception as e:
+        logging.error(f"Error classifying specialization: {str(e)}")
+        return JsonResponse({"error": "Error classifying specialization"}, status=500)
+
+    try:
+        logging.info(f"Generating medical remedy for input: {input_text}")
+        print(input_text)
+        remedy = generate_text_response(input_text,lang)
+        print(remedy)
+        logging.info(f"Medical remedy generated: {remedy}")
+
+    except Exception as e:
+        logging.error(f"Error generating medical remedy: {str(e)}")
+        return JsonResponse({"error": "Error generating medical remedy"}, status=500)
+
+    try:
+        logging.info(f"Fetching doctors for specialization: {specialization}")
+        doctors = Doctor.objects.filter(specialization=specialization).values()
+        doctor_list = list(doctors)
+        logging.info(f"Found {len(doctor_list)} doctors under specialization {specialization}")
+
+    except Exception as e:
+        logging.error(f"Error fetching doctors: {str(e)}")
+        return JsonResponse({"error": "Error fetching doctors"}, status=500)
+
+    response_data = {
+        "text_response": remedy,
+        "specialization": specialization,
+        "doctors": doctor_list,
+    }
+    return JsonResponse(response_data, status=200)
