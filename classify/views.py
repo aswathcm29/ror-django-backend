@@ -120,14 +120,12 @@ def voice_navigation(request):
 def medical_chatbot(request):
     input_text = request.data.get('text')
     lang = request.data.get('lang', 'en')
-    print(input_text)
     if not input_text:
         return JsonResponse({"error": "Query is required"}, status=400)
 
     try:
         logging.info(f"Classifying specialization for input: {input_text}")
         specialization = classify_specialization(input_text)
-        print(specialization)
         logging.info(f"Classified specialization: {specialization}")
 
     except Exception as e:
@@ -136,9 +134,7 @@ def medical_chatbot(request):
 
     try:
         logging.info(f"Generating medical remedy for input: {input_text}")
-        print(input_text)
         remedy = generate_text_response(input_text,lang)
-        print(remedy)
         logging.info(f"Medical remedy generated: {remedy}")
 
     except Exception as e:
