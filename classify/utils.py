@@ -119,7 +119,7 @@ def generate_text_response(input_text, lang):
             messages=[
                 {
                     "role": "user",
-                    "content": f"Give in short only the remedy for the given query - {input_text}  !!Avoid escape characters",
+                    "content": f"Give in short only the remedy for the given query - {input_text} ",
                 }
             ],
             model="llama3-8b-8192",

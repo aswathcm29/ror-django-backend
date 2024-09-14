@@ -58,7 +58,7 @@ class Doctor(AbstractUser):
 
     bio = models.CharField(max_length=256, blank=True,null=True)
     def __str__(self):
-        return self.phonenumber
+        return self.name
 
 
 class Patient(AbstractUser):
@@ -75,4 +75,4 @@ class Patient(AbstractUser):
     
     
     def __str__(self):
-        return self.phonenumber
+        return self.name
