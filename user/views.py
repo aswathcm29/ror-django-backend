@@ -9,8 +9,20 @@ from .models import Doctor, Patient
 from . import doctor
 from . import utils
 from geopy.geocoders import Nominatim
+import math
 
 
+
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371 
+    lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
+
+    dlat = lat2 - lat1
+    dlon = lon2 - lon1
+    a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    return R * c
+ 
 
 def get_location_from_coordinates(latitude, longitude):
     geolocator = Nominatim(user_agent="geoapiExercises")
@@ -48,7 +60,6 @@ def login_patient(request):
 
 
 
-
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_doctor(request):
@@ -82,10 +93,14 @@ def register_patient(request):
 
     location_name = None
 
-    if latitude is not None and longitude is not None:
-        location_name = get_location_from_coordinates(latitude, longitude)
+    if latitude is not None and latitude is not None:
+        address = get_location_from_coordinates(latitude, longitude)
+        if address:
+            location_name = address
+        
 
     patient = Patient(
+        name="Varsha",
         phonenumber=phonenumber,
         latitude=latitude,
         longitude=longitude,
@@ -95,7 +110,7 @@ def register_patient(request):
     patient.save()
 
     token = generate_token(patient)
-    return Response({'phonenumber': patient.phonenumber, 'token': token}, status=201)
+    return JsonResponse({'phonenumber': patient.phonenumber, 'token': token}, status=201)
 
 
 @api_view(['POST'])
@@ -110,12 +125,16 @@ def register_doctor(request):
 
     if Doctor.objects.filter(phonenumber=phonenumber).exists():
         return Response({'error': 'Phone number already exists'}, status=400)
-
-
-    if latitude is not None and longitude is not None:
-        location_name = get_location_from_coordinates(latitude, longitude)
-
+    
+    location_name=None
+    
+    if latitude is not None and latitude is not None:
+        address = get_location_from_coordinates(latitude, longitude)
+        if address:
+            location_name = address
+        
     doctor = Doctor(
+        name="Dr.Strange",
         phonenumber=phonenumber,
         latitude=latitude,
         longitude=longitude,
@@ -125,7 +144,7 @@ def register_doctor(request):
     doctor.save()
 
     token = generate_token(doctor)
-    return Response({'phonenumber': doctor.phonenumber, 'token': token}, status=201)
+    return JsonResponse({'phonenumber': doctor.phonenumber, 'token': token}, status=201)
 
 
 @api_view(['PATCH'])
@@ -167,7 +186,6 @@ def get_available_doctors(request):
 
 @api_view(['GET'])
 @permission_classes([AllowAny])
-# View function to handle profile retrieval
 def view_profile(request):
     phone_number = request.query_params.get('id')
     user_role = request.query_params.get('role')
@@ -178,8 +196,46 @@ def view_profile(request):
     profile = utils.get_user_profile(phone_number, user_role)
 
     if profile:
-        # Convert profile to dictionary and return as JSON response
         return JsonResponse({'message': 'User found', 'profile': utils.profile_to_dict(profile, user_role)}, status=200)
     else:
         return JsonResponse({'message': 'User not found'}, status=404)
     
+
+
+@api_view(['GET'])
+@permission_classes([AllowAny])
+def find_nearest_doctors(request):
+    phonenumber = request.query_params.get('phonenumber')
+    role = request.query_params.get('role')
+
+    if not phonenumber or role != 'patient':
+        return JsonResponse({'error': 'Valid phone number and patient role are required'}, status=400)
+
+    try:
+        patient = Patient.objects.get(phonenumber=phonenumber)
+        patient_lat = patient.latitude
+        patient_lon = patient.longitude
+    except Patient.DoesNotExist:
+        return JsonResponse({'error': 'Patient not found'}, status=404)
+
+    if not patient_lat or not patient_lon:
+        return JsonResponse({'error': 'Patient location not available'}, status=400)
+
+    doctors = Doctor.objects.all()
+
+    nearby_doctors = []
+    for doctor in doctors:
+        if doctor.latitude is not None and doctor.longitude is not None:
+            distance = haversine(patient_lat, patient_lon, doctor.latitude, doctor.longitude)
+            if distance <= 10:
+                nearby_doctors.append({
+                    'name': doctor.name,
+                    'specialization': doctor.specialization,
+                    'experience_years': doctor.experience_years,
+                    'location_name': doctor.location_name,
+                    'latitude': doctor.latitude,
+                    'longitude': doctor.longitude,
+                    'distance_km': round(distance, 2) 
+                })
+
+    return JsonResponse({'nearby_doctors': nearby_doctors}, status=200)

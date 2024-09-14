@@ -12,6 +12,8 @@ def get_location_from_coordinates(latitude, longitude):
     except Exception as e:
         return None
 
+
+
 def modify_profile(request, phone_number, role):
     latitude = request.data.get('latitude')
     longitude = request.data.get('longitude')
@@ -29,7 +31,9 @@ def modify_profile(request, phone_number, role):
     for field in fields_to_update[role]:
         if field in request.data and request.data.get(field) is not None:
             setattr(user, field, request.data.get(field))
-
+    
+    
+    
     if latitude or longitude:
         try:
             if latitude.strip() == '':
@@ -43,9 +47,7 @@ def modify_profile(request, phone_number, role):
             if latitude is not None and latitude is not None:
                 address = get_location_from_coordinates(user.latitude, user.longitude)
                 if address:
-                    user.location_name = address
-                else:
-                    return 'Error unable to get location from coordinates'
+                    user.location_name = address      
 
         except ValueError:
             return 'Error invalid latitude or longitude'
