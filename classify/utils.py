@@ -146,13 +146,17 @@ def classify_page(input_text, lang):
 
         prompt = (
             "Classify the following query into one of these categories: "
-            "'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment'.\n\n"
+            "'medibot', 'mediscanner', 'user_profile', 'upload_prescription', 'book_appointment','community','edit_profile','search_doctor'.\n\n"
             "Here is how you should classify:\n"
             "- 'medibot': Use this category for queries related to basic clarifications, symptoms of diseases, or general medical information.\n"
             "- 'mediscanner': Use this category for queries about physical injuries, scanning wounds, or any urgent medical issues that require immediate attention.\n"
             "- 'user_profile': Use this category for queries related to updating or changing personal data or profile information.\n"
             "- 'upload_prescription': Use this category for queries about adding or viewing prescriptions.\n"
             "- 'book_appointment': Use this category for queries about consulting a doctor, booking appointments, or asking questions related to doctor consultations.\n\n"
+            "- 'community': Use this category for queries related to community health, public health, or general health awareness.\n\n"
+            "- 'edit_profile': Use this category for queries related to updating or changing personal data or profile information.\n\n"
+            "- 'search_doctor': Use this category for queries related to finding a doctor, searching for a doctor, or looking for a specialist.\n\n"
+
             "Query: {input_text}\n\n"
             "Category:\n"
             "Just give me a single one-word answer based on the category that best fits the query provided."
