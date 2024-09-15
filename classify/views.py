@@ -124,7 +124,7 @@ def medical_chatbot(request):
     lang = request.data.get('lang', 'en')
     user_role = 'patient'
     phone_number = request.query_params.get('id')
-    print('phone_number',phone_number)
+
     if not input_text:
         return JsonResponse({"error": "Query is required"}, status=400)
 
@@ -164,7 +164,7 @@ def medical_chatbot(request):
             return JsonResponse({"error": "Patient not found"}, status=404)
         latitude = profile.latitude
         longitude = profile.longitude
-        hospitals = get_nearby_medical_centers(latitude, longitude)
+        hospitals = get_nearby_medical_centers(latitude, longitude, specialization=specialization)
         hospital_distances = find_hospital_distance(hospitals,latitude, longitude )
     except Exception as e:
         return JsonResponse({"error": "Error fetching nearby hospitals"}, status=500)

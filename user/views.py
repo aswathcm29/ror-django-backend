@@ -248,6 +248,8 @@ def find_nearest_doctors(request):
 def nearby_hospital(request):
     phone_number = request.query_params.get('id')
     user_role = request.query_params.get('user_role')
+    specialization = request.query_params.get('specialization')
+
     profile = utils.get_user_profile(phone_number, user_role)
     profile = utils.profile_to_dict(profile,user_role)
     print("profile",profile)
@@ -255,10 +257,8 @@ def nearby_hospital(request):
         return JsonResponse({'error': 'User not found'}, status=404)
     if not profile['latitude'] or not profile['longitude']:
         return JsonResponse({'error': 'Location not available'}, status=400)
-    hospitals = utils.get_nearby_medical_centers(profile['latitude'], profile['longitude'])
+    hospitals = utils.get_nearby_medical_centers(profile['latitude'], profile['longitude'], specialization=specialization)
     calculate_hospital_distance = utils.find_hospital_distance(hospitals=hospitals,user_lat = profile['latitude'],user_long = profile['longitude'])
-    # for index, center in enumerate(hospitals):
-    #         distance = geodesic((profile['latitude'], profile['longitude']), (center['lat'], center['lon'])).kilometers
-    #         hospitals[index]['distance'] = round(distance, 2)
+
     return JsonResponse({'hospitals': calculate_hospital_distance}, status=200)
     

@@ -104,9 +104,11 @@ def profile_to_dict(profile, user_role):
     return None
 
 
-def get_nearby_medical_centers(latitude, longitude, radius=5000):  # radius in meters
+def get_nearby_medical_centers(latitude, longitude, specialization, radius=10000):  # radius in meters
     overpass_url = "http://overpass-api.de/api/interpreter"
-    overpass_query = f"""
+    print("special",specialization)
+    if not specialization:
+        overpass_query = f"""
     [out:json];
     (
       node["amenity"="hospital"](around:{radius},{latitude},{longitude});
@@ -116,20 +118,36 @@ def get_nearby_medical_centers(latitude, longitude, radius=5000):  # radius in m
     );
     out body;
     """
+    else:
+        radius = 20000
+        overpass_query = f"""
+        [out:json];
+        (
+        node["amenity"="hospital"]["healthcare:speciality"~"{specialization}"](around:{radius},{latitude},{longitude});
+        way["amenity"="hospital"]["healthcare:speciality"~"{specialization}"](around:{radius},{latitude},{longitude});
+        relation["amenity"="hospital"]["healthcare:speciality"~"{specialization}"](around:{radius},{latitude},{longitude});
+        );
+        out center;
+        """
     response = requests.get(overpass_url, params={'data': overpass_query})
     if response.status_code == 200:
         data = response.json()
-        return [
-            {
-                'name': element['tags'].get('name', 'Unnamed'),
-                'type': element['tags'].get('amenity') or element['tags'].get('healthcare'),
-                'lat': element['lat'],
-                'lon': element['lon']
-            }
-            for element in data['elements']
-        ]
+        hospitals = []
+        for element in data['elements']:
+            if element['type'] == 'node':
+                lat, lon = element['lat'], element['lon']
+            else:  # way or relation
+                lat, lon = element['center']['lat'], element['center']['lon']
+            hospitals.append({
+                'name': element['tags'].get('name', 'Unnamed Hospital'),
+                'speciality': element['tags'].get('healthcare:speciality', 'Unknown'),
+                'lat': lat,
+                'lon': lon
+            })
+        return hospitals
     else:
         return []
+
 
 
 def find_hospital_distance(hospitals,user_lat,user_long):
