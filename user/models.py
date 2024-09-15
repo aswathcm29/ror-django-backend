@@ -40,6 +40,8 @@ SPECIALIZATION_CHOICES = [
     ("emergency_medicine", "Emergency Medicine"),
     ("addiction_medicine", "Addiction Medicine"),
     ("critical_care_medicine", "Critical Care Medicine"),
+    ('orthopedics', 'Orthopedics'),
+    ('ent','ENT')
 ]
 
 
@@ -58,7 +60,7 @@ class Doctor(AbstractUser):
 
     bio = models.CharField(max_length=256, blank=True,null=True)
     def __str__(self):
-        return self.phonenumber
+        return self.name
 
 
 class Patient(AbstractUser):
@@ -67,10 +69,11 @@ class Patient(AbstractUser):
     height = models.DecimalField(max_digits=6, decimal_places=2,blank=True,default=0)  
     weight = models.IntegerField(default=0)
     gender = models.CharField(max_length=20, choices=[('female', 'Female'), ('male', 'Male')],blank=True)
-    bloodgroup = models.CharField(max_length=10,default='')  
+    bloodgroup = models.CharField(max_length=10,default='', null=True)  
+    bloodgroup_type = models.CharField(max_length=10,default='',null=True)
     latitude = models.FloatField(blank=True, null=True)  
     longitude = models.FloatField(blank=True, null=True)  
     location_name = models.CharField(max_length=255, blank=True, null=True)
     bio = models.CharField(max_length=256, blank=True,null=True)
     def __str__(self):
-        return self.phonenumber
+        return self.name

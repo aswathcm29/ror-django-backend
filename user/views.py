@@ -158,7 +158,8 @@ def get_available_doctors(request):
             'experience_years': doc.experience_years,
             'location_name': doc.location_name,
             'latitude': doc.latitude,
-            'longitude': doc.longitude
+            'longitude': doc.longitude,
+            'bio': doc.bio
     })
     return Response(data, status=200)
 
