@@ -17,12 +17,12 @@ def get_location_from_coordinates(latitude, longitude):
 def modify_profile(request, phone_number, role):
     latitude = request.data.get('latitude')
     longitude = request.data.get('longitude')
-    print(latitude,type(longitude))
-
+    location_name = request.data.get('location_name')
+    
     user = get_user_profile(phone_number, role)
     fields_to_update = {
-        'doctor': ['name', 'phonenumber', 'specialization', 'experience_years', 'location_name','bio'],
-        'patient': ['name', 'phonenumber', 'medical_history', 'age', 'height', 'weight', 'gender', 'bloodgroup', 'location_name','bio']
+        'doctor': ['name', 'phonenumber', 'specialization', 'experience_years','bio','latitude','longitude','location_name'],
+        'patient': ['name', 'phonenumber', 'medical_history', 'age', 'height', 'weight', 'gender', 'bloodgroup', 'location_name','bio','latitude','longitude']
     }
 
     if role not in fields_to_update:
@@ -31,10 +31,9 @@ def modify_profile(request, phone_number, role):
     for field in fields_to_update[role]:
         if field in request.data and request.data.get(field) is not None:
             setattr(user, field, request.data.get(field))
-    
-    
-    
-    if latitude or longitude:
+
+    if (location_name=="") and (latitude or longitude) :
+
         try:
             if latitude.strip() == '':
                 raise ValueError("Empty string provided for latitude")
