@@ -8,6 +8,8 @@ from .utils import process_audio, generate_text_response, classify_page,classify
 import logging 
 import os
 from user.models import Doctor
+from user.utils import get_nearby_medical_centers, find_hospital_distance, get_user_profile
+
 
 logger = logging.getLogger(__name__)
 
@@ -120,6 +122,9 @@ def voice_navigation(request):
 def medical_chatbot(request):
     input_text = request.data.get('text')
     lang = request.data.get('lang', 'en')
+    user_role = 'patient'
+    phone_number = request.query_params.get('id')
+
     if not input_text:
         return JsonResponse({"error": "Query is required"}, status=400)
 
@@ -151,9 +156,23 @@ def medical_chatbot(request):
         logging.error(f"Error fetching doctors: {str(e)}")
         return JsonResponse({"error": "Error fetching doctors"}, status=500)
 
+    # nearby local hospitals
+
+    try:
+        profile = get_user_profile(phone_number)
+        if not profile:
+            return JsonResponse({"error": "Patient not found"}, status=404)
+        latitude = profile.latitude
+        longitude = profile.longitude
+        hospitals = get_nearby_medical_centers(latitude, longitude, specialization=specialization)
+        hospital_distances = find_hospital_distance(hospitals,latitude, longitude )
+    except Exception as e:
+        return JsonResponse({"error": "Error fetching nearby hospitals"}, status=500)
+    
     response_data = {
         "text_response": remedy,
         "specialization": specialization,
         "doctors": doctor_list,
+        "hospitals": hospital_distances[:5]
     }
     return JsonResponse(response_data, status=200)
