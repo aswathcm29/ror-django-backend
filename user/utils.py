@@ -1,5 +1,7 @@
 from geopy.geocoders import Nominatim
 from .models import Doctor, Patient
+import requests
+from geopy.distance import geodesic
 
 
 
@@ -56,8 +58,10 @@ def modify_profile(request, phone_number, role):
     return 'Profile updated successfully'
 
 
-def get_user_profile(phone_number, user_role):
+def get_user_profile(phone_number, user_role='patient'):
+
     try:
+        
         if user_role == 'doctor':
             profile = Doctor.objects.get(phonenumber=phone_number)
         elif user_role == 'patient':
@@ -98,3 +102,41 @@ def profile_to_dict(profile, user_role):
         'gender': profile.gender
     }
     return None
+
+
+def get_nearby_medical_centers(latitude, longitude, radius=5000):  # radius in meters
+    overpass_url = "http://overpass-api.de/api/interpreter"
+    overpass_query = f"""
+    [out:json];
+    (
+      node["amenity"="hospital"](around:{radius},{latitude},{longitude});
+      node["amenity"="clinic"](around:{radius},{latitude},{longitude});
+      node["healthcare"="hospital"](around:{radius},{latitude},{longitude});
+      node["healthcare"="clinic"](around:{radius},{latitude},{longitude});
+    );
+    out body;
+    """
+    response = requests.get(overpass_url, params={'data': overpass_query})
+    if response.status_code == 200:
+        data = response.json()
+        return [
+            {
+                'name': element['tags'].get('name', 'Unnamed'),
+                'type': element['tags'].get('amenity') or element['tags'].get('healthcare'),
+                'lat': element['lat'],
+                'lon': element['lon']
+            }
+            for element in data['elements']
+        ]
+    else:
+        return []
+
+
+def find_hospital_distance(hospitals,user_lat,user_long):
+
+    for index,hospital in enumerate(hospitals):
+        hospital_lat = hospital['lat']
+        hospital_lon = hospital['lon']
+        distance = geodesic((hospital_lat, hospital_lon), (user_lat, user_long)).kilometers
+        hospital['distance'] = round(distance, 2)
+    return hospitals
