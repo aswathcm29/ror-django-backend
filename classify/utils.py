@@ -119,7 +119,7 @@ def generate_text_response(input_text, lang):
             messages=[
                 {
                     "role": "user",
-                    "content": f"Give in short only the remedy for the given query - {input_text}  !!Avoid escape characters",
+                    "content": f"Give in short only the remedy for the given query - {input_text} ",
                 }
             ],
             model="llama3-8b-8192",
@@ -207,3 +207,48 @@ def convert_text_to_voice(text_response, lang):
     except Exception as e:
         logging.error(f"Error generating voice response:{str(e)}", exc_info=True) 
         return "Error generating voice response"
+    
+    
+def classify_specialization(input_text):
+    try:
+        groq_text_generation_key = os.getenv("GORQ_TEXT_GENERATION_KEY")
+        if not groq_text_generation_key:
+            raise ValueError("GORQ_TEXT_GENERATION_KEY environment variable not set")
+    except Exception as e:
+        return "Error loading Groq API key"
+    try:
+        client = Groq(
+            api_key=groq_text_generation_key,
+        )
+
+        prompt = (
+            "Classify the following query into one of these medical specializations: "
+            "'allergy_immunology', 'anesthesiology', 'cardiology', 'dermatology', 'endocrinology', 'gastroenterology', "
+            "'geriatrics', 'hematology', 'infectious_disease', 'internal_medicine', 'nephrology', 'neurology', "
+            "'obstetrics_gynecology', 'oncology', 'ophthalmology', 'orthopedic_surgery', 'otolaryngology', "
+            "'pediatrics', 'physical_medicine_rehabilitation', 'psychiatry', 'pulmonology', 'rheumatology', 'surgery', "
+            "'urology', 'emergency_medicine', 'addiction_medicine', 'critical_care_medicine'.\n\n"
+            "Here is how you should classify:\n"
+            "- 'allergy_immunology': For queries related to allergies or the immune system.\n"
+            "- 'cardiology': For heart or cardiovascular-related queries.\n"
+            "- 'dermatology': For skin, hair, and nail-related issues.\n"
+            "- And so on for the rest of the specializations...\n\n"
+            "Query: {input_text}\n\n"
+            "Category:\n"
+            "Just give a single one-word answer based on the category that best fits the query provided."
+        ).format(input_text=input_text)
+
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            model="llama3-8b-8192",
+        )
+
+        return chat_completion.choices[0].message.content.strip()
+    
+    except Exception as e:
+        return "Error generating specialization classification"
